@@ -1,0 +1,16 @@
+export const homeObjOne = {
+	primary: true,
+	lightBg: false,
+	lightTopLine: false,
+	lightText: true,
+	lightTextDesc: true,
+	topLine: "",
+	headline: "This function is developing.",
+	description: "You can use this as soon as it possible.",
+	buttonLabel: "Home",
+	urlLinkBtn: "/",
+	imgStart: "",
+	img: require("../../assets/img/developing.svg"),
+	alt: "developing",
+	start: "",
+};
