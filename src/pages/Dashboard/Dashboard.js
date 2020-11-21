@@ -1,12 +1,13 @@
 import React from "react";
-import { InfoSection } from "../../components";
-import { homeObjOne } from "./Data";
-const Home = () => {
+import DashboardContainer from "../../containers/Dashboard";
+import { NavbarDashboard } from "../../components";
+const Dashboard = () => {
 	return (
 		<>
-			<InfoSection {...homeObjOne} />
+			<NavbarDashboard />
+			<DashboardContainer />
 		</>
 	);
 };
 
-export default Home;
+export default Dashboard;

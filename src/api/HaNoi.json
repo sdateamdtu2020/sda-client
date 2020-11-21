@@ -1,0 +1,145 @@
+{
+	"head": {
+		"vars": ["City", "Humidity", "Year"]
+	},
+	"results": {
+		"bindings": [
+			{
+				"Year": {
+					"datatype": "http://www.w3.org/2001/XMLSchema#int",
+					"type": "literal",
+					"value": "2012"
+				},
+				"Humidity": {
+					"datatype": "http://www.w3.org/2001/XMLSchema#double",
+					"type": "literal",
+					"value": "70"
+				},
+				"City": {
+					"xml:lang": "en",
+					"type": "literal",
+					"value": "Hà Nội"
+				}
+			},
+			{
+				"Year": {
+					"datatype": "http://www.w3.org/2001/XMLSchema#int",
+					"type": "literal",
+					"value": "2013"
+				},
+				"Humidity": {
+					"datatype": "http://www.w3.org/2001/XMLSchema#double",
+					"type": "literal",
+					"value": "80"
+				},
+				"City": {
+					"xml:lang": "en",
+					"type": "literal",
+					"value": "Hà Nội"
+				}
+			},
+			{
+				"Year": {
+					"datatype": "http://www.w3.org/2001/XMLSchema#int",
+					"type": "literal",
+					"value": "2014"
+				},
+				"Humidity": {
+					"datatype": "http://www.w3.org/2001/XMLSchema#double",
+					"type": "literal",
+					"value": "75"
+				},
+				"City": {
+					"xml:lang": "en",
+					"type": "literal",
+					"value": "Hà Nội"
+				}
+			},
+			{
+				"Year": {
+					"datatype": "http://www.w3.org/2001/XMLSchema#int",
+					"type": "literal",
+					"value": "2015"
+				},
+				"Humidity": {
+					"datatype": "http://www.w3.org/2001/XMLSchema#double",
+					"type": "literal",
+					"value": "82"
+				},
+				"City": {
+					"xml:lang": "en",
+					"type": "literal",
+					"value": "Hà Nội"
+				}
+			},
+			{
+				"Year": {
+					"datatype": "http://www.w3.org/2001/XMLSchema#int",
+					"type": "literal",
+					"value": "2016"
+				},
+				"Humidity": {
+					"datatype": "http://www.w3.org/2001/XMLSchema#double",
+					"type": "literal",
+					"value": "89"
+				},
+				"City": {
+					"xml:lang": "en",
+					"type": "literal",
+					"value": "Hà Nội"
+				}
+			},
+			{
+				"Year": {
+					"datatype": "http://www.w3.org/2001/XMLSchema#int",
+					"type": "literal",
+					"value": "2017"
+				},
+				"Humidity": {
+					"datatype": "http://www.w3.org/2001/XMLSchema#double",
+					"type": "literal",
+					"value": "75"
+				},
+				"City": {
+					"xml:lang": "en",
+					"type": "literal",
+					"value": "Hà Nội"
+				}
+			},
+			{
+				"Year": {
+					"datatype": "http://www.w3.org/2001/XMLSchema#int",
+					"type": "literal",
+					"value": "2018"
+				},
+				"Humidity": {
+					"datatype": "http://www.w3.org/2001/XMLSchema#double",
+					"type": "literal",
+					"value": "86"
+				},
+				"City": {
+					"xml:lang": "en",
+					"type": "literal",
+					"value": "Hà Nội"
+				}
+			},
+			{
+				"Year": {
+					"datatype": "http://www.w3.org/2001/XMLSchema#int",
+					"type": "literal",
+					"value": "2019"
+				},
+				"Humidity": {
+					"datatype": "http://www.w3.org/2001/XMLSchema#double",
+					"type": "literal",
+					"value": "83"
+				},
+				"City": {
+					"xml:lang": "en",
+					"type": "literal",
+					"value": "Hà Nội"
+				}
+			}
+		]
+	}
+}

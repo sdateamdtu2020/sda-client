@@ -1,0 +1,149 @@
+{
+  "head": {
+    "vars": [
+      "City",
+      "Humidity",
+      "Year"
+    ]
+  },
+  "results": {
+    "bindings": [
+      {
+        "Year": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#int",
+          "type": "literal",
+          "value": "2012"
+        },
+        "Humidity": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#double",
+          "type": "literal",
+          "value": "8.13E1"
+        },
+        "City": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Cà Mau"
+        }
+      },
+      {
+        "Year": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#int",
+          "type": "literal",
+          "value": "2013"
+        },
+        "Humidity": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#double",
+          "type": "literal",
+          "value": "8.1E1"
+        },
+        "City": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Cà Mau"
+        }
+      },
+      {
+        "Year": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#int",
+          "type": "literal",
+          "value": "2014"
+        },
+        "Humidity": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#double",
+          "type": "literal",
+          "value": "8.1E1"
+        },
+        "City": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Cà Mau"
+        }
+      },
+      {
+        "Year": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#int",
+          "type": "literal",
+          "value": "2015"
+        },
+        "Humidity": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#double",
+          "type": "literal",
+          "value": "8.0E1"
+        },
+        "City": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Cà Mau"
+        }
+      },
+      {
+        "Year": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#int",
+          "type": "literal",
+          "value": "2016"
+        },
+        "Humidity": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#double",
+          "type": "literal",
+          "value": "8.06E1"
+        },
+        "City": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Cà Mau"
+        }
+      },
+      {
+        "Year": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#int",
+          "type": "literal",
+          "value": "2017"
+        },
+        "Humidity": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#double",
+          "type": "literal",
+          "value": "8.08E1"
+        },
+        "City": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Cà Mau"
+        }
+      },
+      {
+        "Year": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#int",
+          "type": "literal",
+          "value": "2018"
+        },
+        "Humidity": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#double",
+          "type": "literal",
+          "value": "8.07E1"
+        },
+        "City": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Cà Mau"
+        }
+      },
+      {
+        "Year": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#int",
+          "type": "literal",
+          "value": "2019"
+        },
+        "Humidity": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#double",
+          "type": "literal",
+          "value": "8.08E1"
+        },
+        "City": {
+          "xml:lang": "en",
+          "type": "literal",
+          "value": "Cà Mau"
+        }
+      }
+    ]
+  }
+}

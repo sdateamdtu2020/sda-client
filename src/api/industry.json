@@ -1,0 +1,2526 @@
+{
+	"total": 504,
+	"success": true,
+	"records": [
+		{
+			"city": "An Giang",
+			"year": 2012,
+			"industry": 106.6
+		},
+		{
+			"city": "An Giang",
+			"year": 2013,
+			"industry": 105.1
+		},
+		{
+			"city": "An Giang",
+			"year": 2014,
+			"industry": 102.6
+		},
+		{
+			"city": "An Giang",
+			"year": 2015,
+			"industry": 105
+		},
+		{
+			"city": "An Giang",
+			"year": 2016,
+			"industry": 105.7
+		},
+		{
+			"city": "An Giang",
+			"year": 2017,
+			"industry": 106.9
+		},
+		{
+			"city": "An Giang",
+			"year": 2018,
+			"industry": 108.9
+		},
+		{
+			"city": "An Giang",
+			"year": 2019,
+			"industry": 109.9
+		},
+		{
+			"city": "Bắc Giang",
+			"year": 2012,
+			"industry": 122.9
+		},
+		{
+			"city": "Bắc Giang",
+			"year": 2013,
+			"industry": 118.7
+		},
+		{
+			"city": "Bắc Giang",
+			"year": 2014,
+			"industry": 114.7
+		},
+		{
+			"city": "Bắc Giang",
+			"year": 2015,
+			"industry": 116.8
+		},
+		{
+			"city": "Bắc Giang",
+			"year": 2016,
+			"industry": 120.3
+		},
+		{
+			"city": "Bắc Giang",
+			"year": 2017,
+			"industry": 129.3
+		},
+		{
+			"city": "Bắc Giang",
+			"year": 2018,
+			"industry": 129.7
+		},
+		{
+			"city": "Bắc Giang",
+			"year": 2019,
+			"industry": 130.1
+		},
+		{
+			"city": "Bắc Kạn",
+			"year": 2012,
+			"industry": 74.9
+		},
+		{
+			"city": "Bắc Kạn",
+			"year": 2013,
+			"industry": 96.8
+		},
+		{
+			"city": "Bắc Kạn",
+			"year": 2014,
+			"industry": 91.5
+		},
+		{
+			"city": "Bắc Kạn",
+			"year": 2015,
+			"industry": 100.8
+		},
+		{
+			"city": "Bắc Kạn",
+			"year": 2016,
+			"industry": 100.1
+		},
+		{
+			"city": "Bắc Kạn",
+			"year": 2017,
+			"industry": 100.8
+		},
+		{
+			"city": "Bắc Kạn",
+			"year": 2018,
+			"industry": 113.8
+		},
+		{
+			"city": "Bắc Kạn",
+			"year": 2019,
+			"industry": 118
+		},
+		{
+			"city": "Bạc Liêu",
+			"year": 2012,
+			"industry": 103.8
+		},
+		{
+			"city": "Bạc Liêu",
+			"year": 2013,
+			"industry": 105.3
+		},
+		{
+			"city": "Bạc Liêu",
+			"year": 2014,
+			"industry": 105.2
+		},
+		{
+			"city": "Bạc Liêu",
+			"year": 2014,
+			"industry": 105.2
+		},
+		{
+			"city": "Bạc Liêu",
+			"year": 2016,
+			"industry": 103.4
+		},
+		{
+			"city": "Bạc Liêu",
+			"year": 2017,
+			"industry": 109
+		},
+		{
+			"city": "Bạc Liêu",
+			"year": 2018,
+			"industry": 112.3
+		},
+		{
+			"city": "Bạc Liêu",
+			"year": 2019,
+			"industry": 112.4
+		},
+		{
+			"city": "Bắc Ninh",
+			"year": 2012,
+			"industry": 175
+		},
+		{
+			"city": "Bắc Ninh",
+			"year": 2013,
+			"industry": 149.2
+		},
+		{
+			"city": "Bắc Ninh",
+			"year": 2014,
+			"industry": 87.5
+		},
+		{
+			"city": "Bắc Ninh",
+			"year": 2015,
+			"industry": 112
+		},
+		{
+			"city": "Bắc Ninh",
+			"year": 2016,
+			"industry": 105.1
+		},
+		{
+			"city": "Bắc Ninh",
+			"year": 2017,
+			"industry": 135.5
+		},
+		{
+			"city": "Bắc Ninh",
+			"year": 2018,
+			"industry": 107.4
+		},
+		{
+			"city": "Bắc Ninh",
+			"year": 2019,
+			"industry": 88.6
+		},
+		{
+			"city": "Bà Rịa - Vũng Tàu",
+			"year": 2012,
+			"industry": 99.5
+		},
+		{
+			"city": "Bà Rịa - Vũng Tàu",
+			"year": 2013,
+			"industry": 95.1
+		},
+		{
+			"city": "Bà Rịa - Vũng Tàu",
+			"year": 2014,
+			"industry": 103.9
+		},
+		{
+			"city": "Bà Rịa - Vũng Tàu",
+			"year": 2015,
+			"industry": 100.9
+		},
+		{
+			"city": "Bà Rịa - Vũng Tàu",
+			"year": 2016,
+			"industry": 96.1
+		},
+		{
+			"city": "Bà Rịa - Vũng Tàu",
+			"year": 2017,
+			"industry": 96.2
+		},
+		{
+			"city": "Bà Rịa - Vũng Tàu",
+			"year": 2018,
+			"industry": 99.4
+		},
+		{
+			"city": "Bà Rịa - Vũng Tàu",
+			"year": 2019,
+			"industry": 102.1
+		},
+		{
+			"city": "Bến Tre",
+			"year": 2012,
+			"industry": 114.8
+		},
+		{
+			"city": "Bến Tre",
+			"year": 2013,
+			"industry": 111.9
+		},
+		{
+			"city": "Bến Tre",
+			"year": 2014,
+			"industry": 102.7
+		},
+		{
+			"city": "Bến Tre",
+			"year": 2015,
+			"industry": 108.5
+		},
+		{
+			"city": "Bến Tre",
+			"year": 2016,
+			"industry": 106.5
+		},
+		{
+			"city": "Bến Tre",
+			"year": 2017,
+			"industry": 108
+		},
+		{
+			"city": "Bến Tre",
+			"year": 2018,
+			"industry": 113.8
+		},
+		{
+			"city": "Bến Tre",
+			"year": 2019,
+			"industry": 109.6
+		},
+		{
+			"city": "Bình Định",
+			"year": 2012,
+			"industry": 106.8
+		},
+		{
+			"city": "Bình Định",
+			"year": 2013,
+			"industry": 107
+		},
+		{
+			"city": "Bình Định",
+			"year": 2014,
+			"industry": 105.7
+		},
+		{
+			"city": "Bình Định",
+			"year": 2015,
+			"industry": 108.5
+		},
+		{
+			"city": "Bình Định",
+			"year": 2016,
+			"industry": 107.3
+		},
+		{
+			"city": "Bình Định",
+			"year": 2017,
+			"industry": 108.8
+		},
+		{
+			"city": "Bình Định",
+			"year": 2018,
+			"industry": 108.7
+		},
+		{
+			"city": "Bình Định",
+			"year": 2019,
+			"industry": 108.4
+		},
+		{
+			"city": "Bình Dương",
+			"year": 2012,
+			"industry": 110.4
+		},
+		{
+			"city": "Bình Dương",
+			"year": 2013,
+			"industry": 111.7
+		},
+		{
+			"city": "Bình Dương",
+			"year": 2014,
+			"industry": 107.2
+		},
+		{
+			"city": "Bình Dương",
+			"year": 2015,
+			"industry": 109.3
+		},
+		{
+			"city": "Bình Dương",
+			"year": 2016,
+			"industry": 108.1
+		},
+		{
+			"city": "Bình Dương",
+			"year": 2017,
+			"industry": 110.4
+		},
+		{
+			"city": "Bình Dương",
+			"year": 2018,
+			"industry": 108.4
+		},
+		{
+			"city": "Bình Dương",
+			"year": 2019,
+			"industry": 109
+		},
+		{
+			"city": "Bình Phước",
+			"year": 2012,
+			"industry": 114.7
+		},
+		{
+			"city": "Bình Phước",
+			"year": 2013,
+			"industry": 112.1
+		},
+		{
+			"city": "Bình Phước",
+			"year": 2014,
+			"industry": 111.2
+		},
+		{
+			"city": "Bình Phước",
+			"year": 2015,
+			"industry": 106.8
+		},
+		{
+			"city": "Bình Phước",
+			"year": 2016,
+			"industry": 106
+		},
+		{
+			"city": "Bình Phước",
+			"year": 2017,
+			"industry": 108.8
+		},
+		{
+			"city": "Bình Phước",
+			"year": 2018,
+			"industry": 112.3
+		},
+		{
+			"city": "Bình Phước",
+			"year": 2019,
+			"industry": 111.9
+		},
+		{
+			"city": "Bình Thuận",
+			"year": 2012,
+			"industry": 107.8
+		},
+		{
+			"city": "Bình Thuận",
+			"year": 2013,
+			"industry": 114.9
+		},
+		{
+			"city": "Bình Thuận",
+			"year": 2014,
+			"industry": 98
+		},
+		{
+			"city": "Bình Thuận",
+			"year": 2015,
+			"industry": 113.3
+		},
+		{
+			"city": "Bình Thuận",
+			"year": 2016,
+			"industry": 107.3
+		},
+		{
+			"city": "Bình Thuận",
+			"year": 2017,
+			"industry": 106.4
+		},
+		{
+			"city": "Bình Thuận",
+			"year": 2018,
+			"industry": 120.5
+		},
+		{
+			"city": "Bình Thuận",
+			"year": 2019,
+			"industry": 133
+		},
+		{
+			"city": "Cà Mau",
+			"year": 2012,
+			"industry": 109.9
+		},
+		{
+			"city": "Cà Mau",
+			"year": 2013,
+			"industry": 112.4
+		},
+		{
+			"city": "Cà Mau",
+			"year": 2014,
+			"industry": 109.1
+		},
+		{
+			"city": "Cà Mau",
+			"year": 2015,
+			"industry": 100.8
+		},
+		{
+			"city": "Cà Mau",
+			"year": 2016,
+			"industry": 98.2
+		},
+		{
+			"city": "Cà Mau",
+			"year": 2017,
+			"industry": 103.4
+		},
+		{
+			"city": "Cà Mau",
+			"year": 2018,
+			"industry": 108.2
+		},
+		{
+			"city": "Cà Mau",
+			"year": 2019,
+			"industry": 106.1
+		},
+		{
+			"city": "Cần Thơ",
+			"year": 2012,
+			"industry": 104.6
+		},
+		{
+			"city": "Cần Thơ",
+			"year": 2013,
+			"industry": 107.7
+		},
+		{
+			"city": "Cần Thơ",
+			"year": 2014,
+			"industry": 108.2
+		},
+		{
+			"city": "Cần Thơ",
+			"year": 2015,
+			"industry": 107.3
+		},
+		{
+			"city": "Cần Thơ",
+			"year": 2016,
+			"industry": 108.8
+		},
+		{
+			"city": "Cần Thơ",
+			"year": 2017,
+			"industry": 107.2
+		},
+		{
+			"city": "Cần Thơ",
+			"year": 2018,
+			"industry": 107.8
+		},
+		{
+			"city": "Cần Thơ",
+			"year": 2019,
+			"industry": 107.7
+		},
+		{
+			"city": "Cao Bằng",
+			"year": 2012,
+			"industry": 99.1
+		},
+		{
+			"city": "Cao Bằng",
+			"year": 2013,
+			"industry": 110.4
+		},
+		{
+			"city": "Cao Bằng",
+			"year": 2014,
+			"industry": 110.9
+		},
+		{
+			"city": "Cao Bằng",
+			"year": 2015,
+			"industry": 43.3
+		},
+		{
+			"city": "Cao Bằng",
+			"year": 2016,
+			"industry": 122.7
+		},
+		{
+			"city": "Cao Bằng",
+			"year": 2017,
+			"industry": 138.9
+		},
+		{
+			"city": "Cao Bằng",
+			"year": 2018,
+			"industry": 126.3
+		},
+		{
+			"city": "Cao Bằng",
+			"year": 2019,
+			"industry": 108.5
+		},
+		{
+			"city": "Đắk Lắk",
+			"year": 2012,
+			"industry": 110.5
+		},
+		{
+			"city": "Đắk Lắk",
+			"year": 2013,
+			"industry": 100.3
+		},
+		{
+			"city": "Đắk Lắk",
+			"year": 2014,
+			"industry": 103.8
+		},
+		{
+			"city": "Đắk Lắk",
+			"year": 2015,
+			"industry": 98.7
+		},
+		{
+			"city": "Đắk Lắk",
+			"year": 2016,
+			"industry": 107.1
+		},
+		{
+			"city": "Đắk Lắk",
+			"year": 2017,
+			"industry": 119.3
+		},
+		{
+			"city": "Đắk Lắk",
+			"year": 2018,
+			"industry": 101
+		},
+		{
+			"city": "Đắk Lắk",
+			"year": 2019,
+			"industry": 102.6
+		},
+		{
+			"city": "Đắk Nông",
+			"year": 2012,
+			"industry": 109.4
+		},
+		{
+			"city": "Đắk Nông",
+			"year": 2013,
+			"industry": 105.1
+		},
+		{
+			"city": "Đắk Nông",
+			"year": 2014,
+			"industry": 107.2
+		},
+		{
+			"city": "Đắk Nông",
+			"year": 2015,
+			"industry": 107
+		},
+		{
+			"city": "Đắk Nông",
+			"year": 2016,
+			"industry": 103.6
+		},
+		{
+			"city": "Đắk Nông",
+			"year": 2017,
+			"industry": 158.2
+		},
+		{
+			"city": "Đắk Nông",
+			"year": 2018,
+			"industry": 109
+		},
+		{
+			"city": "Đắk Nông",
+			"year": 2019,
+			"industry": 104.3
+		},
+		{
+			"city": "Đà Nẵng",
+			"year": 2012,
+			"industry": 106
+		},
+		{
+			"city": "Đà Nẵng",
+			"year": 2013,
+			"industry": 110.5
+		},
+		{
+			"city": "Đà Nẵng",
+			"year": 2014,
+			"industry": 111
+		},
+		{
+			"city": "Đà Nẵng",
+			"year": 2015,
+			"industry": 113.1
+		},
+		{
+			"city": "Đà Nẵng",
+			"year": 2016,
+			"industry": 113.2
+		},
+		{
+			"city": "Đà Nẵng",
+			"year": 2017,
+			"industry": 109.5
+		},
+		{
+			"city": "Đà Nẵng",
+			"year": 2018,
+			"industry": 106.6
+		},
+		{
+			"city": "Đà Nẵng",
+			"year": 2019,
+			"industry": 104.3
+		},
+		{
+			"city": "Điện Biên",
+			"year": 2012,
+			"industry": 105.4
+		},
+		{
+			"city": "Điện Biên",
+			"year": 2013,
+			"industry": 107
+		},
+		{
+			"city": "Điện Biên",
+			"year": 2014,
+			"industry": 102.6
+		},
+		{
+			"city": "Điện Biên",
+			"year": 2015,
+			"industry": 108.1
+		},
+		{
+			"city": "Điện Biên",
+			"year": 2016,
+			"industry": 109
+		},
+		{
+			"city": "Điện Biên",
+			"year": 2017,
+			"industry": 114.5
+		},
+		{
+			"city": "Điện Biên",
+			"year": 2018,
+			"industry": 110.6
+		},
+		{
+			"city": "Điện Biên",
+			"year": 2019,
+			"industry": 98.4
+		},
+		{
+			"city": "Đồng Nai",
+			"year": 2012,
+			"industry": 107.4
+		},
+		{
+			"city": "Đồng Nai",
+			"year": 2013,
+			"industry": 107.6
+		},
+		{
+			"city": "Đồng Nai",
+			"year": 2014,
+			"industry": 107.6
+		},
+		{
+			"city": "Đồng Nai",
+			"year": 2015,
+			"industry": 107.7
+		},
+		{
+			"city": "Đồng Nai",
+			"year": 2016,
+			"industry": 107.5
+		},
+		{
+			"city": "Đồng Nai",
+			"year": 2017,
+			"industry": 108.6
+		},
+		{
+			"city": "Đồng Nai",
+			"year": 2018,
+			"industry": 108.7
+		},
+		{
+			"city": "Đồng Nai",
+			"year": 2019,
+			"industry": 108.3
+		},
+		{
+			"city": "Đồng Tháp",
+			"year": 2012,
+			"industry": 105.2
+		},
+		{
+			"city": "Đồng Tháp",
+			"year": 2013,
+			"industry": 106.8
+		},
+		{
+			"city": "Đồng Tháp",
+			"year": 2014,
+			"industry": 108.9
+		},
+		{
+			"city": "Đồng Tháp",
+			"year": 2015,
+			"industry": 109.8
+		},
+		{
+			"city": "Đồng Tháp",
+			"year": 2016,
+			"industry": 104.7
+		},
+		{
+			"city": "Đồng Tháp",
+			"year": 2017,
+			"industry": 107
+		},
+		{
+			"city": "Đồng Tháp",
+			"year": 2018,
+			"industry": 107.2
+		},
+		{
+			"city": "Đồng Tháp",
+			"year": 2019,
+			"industry": 108.3
+		},
+		{
+			"city": "Gia Lai",
+			"year": 2012,
+			"industry": 121
+		},
+		{
+			"city": "Gia Lai",
+			"year": 2013,
+			"industry": 108.1
+		},
+		{
+			"city": "Gia Lai",
+			"year": 2014,
+			"industry": 106.1
+		},
+		{
+			"city": "Gia Lai",
+			"year": 2015,
+			"industry": 99.1
+		},
+		{
+			"city": "Gia Lai",
+			"year": 2016,
+			"industry": 92.3
+		},
+		{
+			"city": "Gia Lai",
+			"year": 2017,
+			"industry": 121.4
+		},
+		{
+			"city": "Gia Lai",
+			"year": 2018,
+			"industry": 113.1
+		},
+		{
+			"city": "Gia Lai",
+			"year": 2019,
+			"industry": 92.5
+		},
+		{
+			"city": "Hà Giang",
+			"year": 2012,
+			"industry": 118.6
+		},
+		{
+			"city": "Hà Giang",
+			"year": 2013,
+			"industry": 105.4
+		},
+		{
+			"city": "Hà Giang",
+			"year": 2014,
+			"industry": 99.5
+		},
+		{
+			"city": "Hà Giang",
+			"year": 2015,
+			"industry": 101.2
+		},
+		{
+			"city": "Hà Giang",
+			"year": 2016,
+			"industry": 109.4
+		},
+		{
+			"city": "Hà Giang",
+			"year": 2017,
+			"industry": 121.1
+		},
+		{
+			"city": "Hà Giang",
+			"year": 2018,
+			"industry": 112.8
+		},
+		{
+			"city": "Hà Giang",
+			"year": 2019,
+			"industry": 107.4
+		},
+		{
+			"city": "Hải Dương",
+			"year": 2012,
+			"industry": 99
+		},
+		{
+			"city": "Hải Dương",
+			"year": 2013,
+			"industry": 108.1
+		},
+		{
+			"city": "Hải Dương",
+			"year": 2014,
+			"industry": 114.6
+		},
+		{
+			"city": "Hải Dương",
+			"year": 2015,
+			"industry": 110.6
+		},
+		{
+			"city": "Hải Dương",
+			"year": 2016,
+			"industry": 108.8
+		},
+		{
+			"city": "Hải Dương",
+			"year": 2017,
+			"industry": 109.6
+		},
+		{
+			"city": "Hải Dương",
+			"year": 2018,
+			"industry": 110
+		},
+		{
+			"city": "Hải Dương",
+			"year": 2019,
+			"industry": 110.2
+		},
+		{
+			"city": "Hải Phòng",
+			"year": 2012,
+			"industry": 103.9
+		},
+		{
+			"city": "Hải Phòng",
+			"year": 2013,
+			"industry": 106.5
+		},
+		{
+			"city": "Hải Phòng",
+			"year": 2014,
+			"industry": 112.9
+		},
+		{
+			"city": "Hải Phòng",
+			"year": 2015,
+			"industry": 116.6
+		},
+		{
+			"city": "Hải Phòng",
+			"year": 2016,
+			"industry": 116.9
+		},
+		{
+			"city": "Hải Phòng",
+			"year": 2017,
+			"industry": 120
+		},
+		{
+			"city": "Hải Phòng",
+			"year": 2018,
+			"industry": 125.3
+		},
+		{
+			"city": "Hải Phòng",
+			"year": 2019,
+			"industry": 124.3
+		},
+		{
+			"city": "Hà Nam",
+			"year": 2012,
+			"industry": 130.7
+		},
+		{
+			"city": "Hà Nam",
+			"year": 2013,
+			"industry": 110.9
+		},
+		{
+			"city": "Hà Nam",
+			"year": 2014,
+			"industry": 111.9
+		},
+		{
+			"city": "Hà Nam",
+			"year": 2015,
+			"industry": 124.8
+		},
+		{
+			"city": "Hà Nam",
+			"year": 2016,
+			"industry": 111.1
+		},
+		{
+			"city": "Hà Nam",
+			"year": 2017,
+			"industry": 112.8
+		},
+		{
+			"city": "Hà Nam",
+			"year": 2018,
+			"industry": 113
+		},
+		{
+			"city": "Hà Nam",
+			"year": 2019,
+			"industry": 112.8
+		},
+		{
+			"city": "Hà Nội",
+			"year": 2012,
+			"industry": 105
+		},
+		{
+			"city": "Hà Nội",
+			"year": 2013,
+			"industry": 104.5
+		},
+		{
+			"city": "Hà Nội",
+			"year": 2014,
+			"industry": 104.2
+		},
+		{
+			"city": "Hà Nội",
+			"year": 2015,
+			"industry": 108.3
+		},
+		{
+			"city": "Hà Nội",
+			"year": 2016,
+			"industry": 107.3
+		},
+		{
+			"city": "Hà Nội",
+			"year": 2017,
+			"industry": 107
+		},
+		{
+			"city": "Hà Nội",
+			"year": 2018,
+			"industry": 106.9
+		},
+		{
+			"city": "Hà Nội",
+			"year": 2019,
+			"industry": 108.5
+		},
+		{
+			"city": "Hà Tĩnh",
+			"year": 2012,
+			"industry": 107
+		},
+		{
+			"city": "Hà Tĩnh",
+			"year": 2013,
+			"industry": 113.1
+		},
+		{
+			"city": "Hà Tĩnh",
+			"year": 2014,
+			"industry": 119.1
+		},
+		{
+			"city": "Hà Tĩnh",
+			"year": 2015,
+			"industry": 120.3
+		},
+		{
+			"city": "Hà Tĩnh",
+			"year": 2016,
+			"industry": 120.9
+		},
+		{
+			"city": "Hà Tĩnh",
+			"year": 2017,
+			"industry": 171
+		},
+		{
+			"city": "Hà Tĩnh",
+			"year": 2018,
+			"industry": 188.5
+		},
+		{
+			"city": "Hà Tĩnh",
+			"year": 2019,
+			"industry": 125.5
+		},
+		{
+			"city": "Hậu Giang",
+			"year": 2012,
+			"industry": 135.4
+		},
+		{
+			"city": "Hậu Giang",
+			"year": 2013,
+			"industry": 104.5
+		},
+		{
+			"city": "Hậu Giang",
+			"year": 2014,
+			"industry": 95
+		},
+		{
+			"city": "Hậu Giang",
+			"year": 2015,
+			"industry": 106.2
+		},
+		{
+			"city": "Hậu Giang",
+			"year": 2016,
+			"industry": 107.3
+		},
+		{
+			"city": "Hậu Giang",
+			"year": 2017,
+			"industry": 109.6
+		},
+		{
+			"city": "Hậu Giang",
+			"year": 2018,
+			"industry": 111.2
+		},
+		{
+			"city": "Hậu Giang",
+			"year": 2019,
+			"industry": 110.2
+		},
+		{
+			"city": "Hoà Bình",
+			"year": 2012,
+			"industry": 128.7
+		},
+		{
+			"city": "Hoà Bình",
+			"year": 2013,
+			"industry": 112.8
+		},
+		{
+			"city": "Hoà Bình",
+			"year": 2014,
+			"industry": 101.1
+		},
+		{
+			"city": "Hoà Bình",
+			"year": 2015,
+			"industry": 103.3
+		},
+		{
+			"city": "Hoà Bình",
+			"year": 2016,
+			"industry": 104.8
+		},
+		{
+			"city": "Hoà Bình",
+			"year": 2017,
+			"industry": 113.8
+		},
+		{
+			"city": "Hoà Bình",
+			"year": 2018,
+			"industry": 103.6
+		},
+		{
+			"city": "Hoà Bình",
+			"year": 2019,
+			"industry": 86.6
+		},
+		{
+			"city": "Hưng Yên",
+			"year": 2012,
+			"industry": 108.9
+		},
+		{
+			"city": "Hưng Yên",
+			"year": 2013,
+			"industry": 107.2
+		},
+		{
+			"city": "Hưng Yên",
+			"year": 2014,
+			"industry": 107.5
+		},
+		{
+			"city": "Hưng Yên",
+			"year": 2015,
+			"industry": 108.7
+		},
+		{
+			"city": "Hưng Yên",
+			"year": 2016,
+			"industry": 108.5
+		},
+		{
+			"city": "Hưng Yên",
+			"year": 2017,
+			"industry": 109.4
+		},
+		{
+			"city": "Hưng Yên",
+			"year": 2018,
+			"industry": 110.7
+		},
+		{
+			"city": "Hưng Yên",
+			"year": 2019,
+			"industry": 111.6
+		},
+		{
+			"city": "Khánh Hoà",
+			"year": 2012,
+			"industry": 106.8
+		},
+		{
+			"city": "Khánh Hoà",
+			"year": 2013,
+			"industry": 104.5
+		},
+		{
+			"city": "Khánh Hoà",
+			"year": 2014,
+			"industry": 103.1
+		},
+		{
+			"city": "Khánh Hoà",
+			"year": 2015,
+			"industry": 106.8
+		},
+		{
+			"city": "Khánh Hoà",
+			"year": 2016,
+			"industry": 106.8
+		},
+		{
+			"city": "Khánh Hoà",
+			"year": 2017,
+			"industry": 107
+		},
+		{
+			"city": "Khánh Hoà",
+			"year": 2018,
+			"industry": 107
+		},
+		{
+			"city": "Khánh Hoà",
+			"year": 2019,
+			"industry": 107.2
+		},
+		{
+			"city": "Kiên Giang",
+			"year": 2012,
+			"industry": 105.8
+		},
+		{
+			"city": "Kiên Giang",
+			"year": 2013,
+			"industry": 108.9
+		},
+		{
+			"city": "Kiên Giang",
+			"year": 2014,
+			"industry": 106.2
+		},
+		{
+			"city": "Kiên Giang",
+			"year": 2015,
+			"industry": 108.6
+		},
+		{
+			"city": "Kiên Giang",
+			"year": 2016,
+			"industry": 106.3
+		},
+		{
+			"city": "Kiên Giang",
+			"year": 2017,
+			"industry": 108.5
+		},
+		{
+			"city": "Kiên Giang",
+			"year": 2018,
+			"industry": 108
+		},
+		{
+			"city": "Kiên Giang",
+			"year": 2019,
+			"industry": 111.4
+		},
+		{
+			"city": "Kon Tum",
+			"year": 2012,
+			"industry": 115.3
+		},
+		{
+			"city": "Kon Tum",
+			"year": 2013,
+			"industry": 113.4
+		},
+		{
+			"city": "Kon Tum",
+			"year": 2014,
+			"industry": 105.4
+		},
+		{
+			"city": "Kon Tum",
+			"year": 2015,
+			"industry": 105.2
+		},
+		{
+			"city": "Kon Tum",
+			"year": 2016,
+			"industry": 106.3
+		},
+		{
+			"city": "Kon Tum",
+			"year": 2017,
+			"industry": 119.6
+		},
+		{
+			"city": "Kon Tum",
+			"year": 2018,
+			"industry": 114.2
+		},
+		{
+			"city": "Kon Tum",
+			"year": 2019,
+			"industry": 116.4
+		},
+		{
+			"city": "Lai Châu",
+			"year": 2012,
+			"industry": 101.2
+		},
+		{
+			"city": "Lai Châu",
+			"year": 2013,
+			"industry": 95.4
+		},
+		{
+			"city": "Lai Châu",
+			"year": 2014,
+			"industry": 115.7
+		},
+		{
+			"city": "Lai Châu",
+			"year": 2015,
+			"industry": 100.2
+		},
+		{
+			"city": "Lai Châu",
+			"year": 2016,
+			"industry": 278.2
+		},
+		{
+			"city": "Lai Châu",
+			"year": 2017,
+			"industry": 129.8
+		},
+		{
+			"city": "Lai Châu",
+			"year": 2018,
+			"industry": 107.1
+		},
+		{
+			"city": "Lai Châu",
+			"year": 2019,
+			"industry": 89.8
+		},
+		{
+			"city": "Lâm Đồng",
+			"year": 2012,
+			"industry": 126
+		},
+		{
+			"city": "Lâm Đồng",
+			"year": 2013,
+			"industry": 129
+		},
+		{
+			"city": "Lâm Đồng",
+			"year": 2014,
+			"industry": 116.5
+		},
+		{
+			"city": "Lâm Đồng",
+			"year": 2015,
+			"industry": 105.5
+		},
+		{
+			"city": "Lâm Đồng",
+			"year": 2016,
+			"industry": 106.2
+		},
+		{
+			"city": "Lâm Đồng",
+			"year": 2017,
+			"industry": 110.4
+		},
+		{
+			"city": "Lâm Đồng",
+			"year": 2018,
+			"industry": 107.2
+		},
+		{
+			"city": "Lâm Đồng",
+			"year": 2019,
+			"industry": 104.9
+		},
+		{
+			"city": "Lạng Sơn",
+			"year": 2012,
+			"industry": 96.1
+		},
+		{
+			"city": "Lạng Sơn",
+			"year": 2013,
+			"industry": 103
+		},
+		{
+			"city": "Lạng Sơn",
+			"year": 2014,
+			"industry": 105.2
+		},
+		{
+			"city": "Lạng Sơn",
+			"year": 2015,
+			"industry": 111.6
+		},
+		{
+			"city": "Lạng Sơn",
+			"year": 2016,
+			"industry": 107.7
+		},
+		{
+			"city": "Lạng Sơn",
+			"year": 2017,
+			"industry": 105.1
+		},
+		{
+			"city": "Lạng Sơn",
+			"year": 2018,
+			"industry": 106.5
+		},
+		{
+			"city": "Lạng Sơn",
+			"year": 2019,
+			"industry": 109.5
+		},
+		{
+			"city": "Lào Cai",
+			"year": 2012,
+			"industry": 104
+		},
+		{
+			"city": "Lào Cai",
+			"year": 2013,
+			"industry": 124
+		},
+		{
+			"city": "Lào Cai",
+			"year": 2014,
+			"industry": 105.2
+		},
+		{
+			"city": "Lào Cai",
+			"year": 2015,
+			"industry": 112.1
+		},
+		{
+			"city": "Lào Cai",
+			"year": 2016,
+			"industry": 123.3
+		},
+		{
+			"city": "Lào Cai",
+			"year": 2017,
+			"industry": 117.1
+		},
+		{
+			"city": "Lào Cai",
+			"year": 2018,
+			"industry": 114.4
+		},
+		{
+			"city": "Lào Cai",
+			"year": 2019,
+			"industry": 118.8
+		},
+		{
+			"city": "Long An",
+			"year": 2012,
+			"industry": 114.6
+		},
+		{
+			"city": "Long An",
+			"year": 2013,
+			"industry": 113.8
+		},
+		{
+			"city": "Long An",
+			"year": 2014,
+			"industry": 111.6
+		},
+		{
+			"city": "Long An",
+			"year": 2015,
+			"industry": 112.8
+		},
+		{
+			"city": "Long An",
+			"year": 2016,
+			"industry": 113.5
+		},
+		{
+			"city": "Long An",
+			"year": 2017,
+			"industry": 116.2
+		},
+		{
+			"city": "Long An",
+			"year": 2018,
+			"industry": 116.5
+		},
+		{
+			"city": "Long An",
+			"year": 2019,
+			"industry": 115.1
+		},
+		{
+			"city": "Nam Định",
+			"year": 2012,
+			"industry": 116.4
+		},
+		{
+			"city": "Nam Định",
+			"year": 2013,
+			"industry": 116.1
+		},
+		{
+			"city": "Nam Định",
+			"year": 2014,
+			"industry": 110.6
+		},
+		{
+			"city": "Nam Định",
+			"year": 2015,
+			"industry": 110.3
+		},
+		{
+			"city": "Nam Định",
+			"year": 2016,
+			"industry": 108.8
+		},
+		{
+			"city": "Nam Định",
+			"year": 2017,
+			"industry": 109
+		},
+		{
+			"city": "Nam Định",
+			"year": 2018,
+			"industry": 111
+		},
+		{
+			"city": "Nam Định",
+			"year": 2019,
+			"industry": 113.8
+		},
+		{
+			"city": "Nghệ An",
+			"year": 2012,
+			"industry": 109.7
+		},
+		{
+			"city": "Nghệ An",
+			"year": 2013,
+			"industry": 106
+		},
+		{
+			"city": "Nghệ An",
+			"year": 2014,
+			"industry": 110
+		},
+		{
+			"city": "Nghệ An",
+			"year": 2015,
+			"industry": 109
+		},
+		{
+			"city": "Nghệ An",
+			"year": 2016,
+			"industry": 109.4
+		},
+		{
+			"city": "Nghệ An",
+			"year": 2017,
+			"industry": 117.1
+		},
+		{
+			"city": "Nghệ An",
+			"year": 2018,
+			"industry": 116.6
+		},
+		{
+			"city": "Nghệ An",
+			"year": 2019,
+			"industry": 113.2
+		},
+		{
+			"city": "Ninh Bình",
+			"year": 2012,
+			"industry": 111.6
+		},
+		{
+			"city": "Ninh Bình",
+			"year": 2013,
+			"industry": 111.4
+		},
+		{
+			"city": "Ninh Bình",
+			"year": 2014,
+			"industry": 117.4
+		},
+		{
+			"city": "Ninh Bình",
+			"year": 2015,
+			"industry": 112.3
+		},
+		{
+			"city": "Ninh Bình",
+			"year": 2016,
+			"industry": 101.9
+		},
+		{
+			"city": "Ninh Bình",
+			"year": 2017,
+			"industry": 118.6
+		},
+		{
+			"city": "Ninh Bình",
+			"year": 2018,
+			"industry": 131.1
+		},
+		{
+			"city": "Ninh Bình",
+			"year": 2019,
+			"industry": 126.5
+		},
+		{
+			"city": "Ninh Thuận",
+			"year": 2012,
+			"industry": 110.9
+		},
+		{
+			"city": "Ninh Thuận",
+			"year": 2013,
+			"industry": 112.1
+		},
+		{
+			"city": "Ninh Thuận",
+			"year": 2014,
+			"industry": 125.2
+		},
+		{
+			"city": "Ninh Thuận",
+			"year": 2015,
+			"industry": 109.1
+		},
+		{
+			"city": "Ninh Thuận",
+			"year": 2016,
+			"industry": 102.1
+		},
+		{
+			"city": "Ninh Thuận",
+			"year": 2017,
+			"industry": 106.1
+		},
+		{
+			"city": "Ninh Thuận",
+			"year": 2018,
+			"industry": 109.7
+		},
+		{
+			"city": "Ninh Thuận",
+			"year": 2019,
+			"industry": 143.6
+		},
+		{
+			"city": "Phú Thọ",
+			"year": 2012,
+			"industry": 97.5
+		},
+		{
+			"city": "Phú Thọ",
+			"year": 2013,
+			"industry": 106
+		},
+		{
+			"city": "Phú Thọ",
+			"year": 2014,
+			"industry": 106.2
+		},
+		{
+			"city": "Phú Thọ",
+			"year": 2015,
+			"industry": 116.6
+		},
+		{
+			"city": "Phú Thọ",
+			"year": 2016,
+			"industry": 109.5
+		},
+		{
+			"city": "Phú Thọ",
+			"year": 2017,
+			"industry": 108.1
+		},
+		{
+			"city": "Phú Thọ",
+			"year": 2018,
+			"industry": 108.3
+		},
+		{
+			"city": "Phú Thọ",
+			"year": 2019,
+			"industry": 112
+		},
+		{
+			"city": "Phú Yên",
+			"year": 2012,
+			"industry": 113.4
+		},
+		{
+			"city": "Phú Yên",
+			"year": 2013,
+			"industry": 106.2
+		},
+		{
+			"city": "Phú Yên",
+			"year": 2014,
+			"industry": 107.3
+		},
+		{
+			"city": "Phú Yên",
+			"year": 2015,
+			"industry": 109.3
+		},
+		{
+			"city": "Phú Yên",
+			"year": 2016,
+			"industry": 106.5
+		},
+		{
+			"city": "Phú Yên",
+			"year": 2017,
+			"industry": 107.8
+		},
+		{
+			"city": "Phú Yên",
+			"year": 2018,
+			"industry": 109
+		},
+		{
+			"city": "Phú Yên",
+			"year": 2019,
+			"industry": 111.6
+		},
+		{
+			"city": "Quảng Bình",
+			"year": 2012,
+			"industry": 108.5
+		},
+		{
+			"city": "Quảng Bình",
+			"year": 2013,
+			"industry": 108.7
+		},
+		{
+			"city": "Quảng Bình",
+			"year": 2014,
+			"industry": 106.6
+		},
+		{
+			"city": "Quảng Bình",
+			"year": 2015,
+			"industry": 109.3
+		},
+		{
+			"city": "Quảng Bình",
+			"year": 2016,
+			"industry": 109.2
+		},
+		{
+			"city": "Quảng Bình",
+			"year": 2017,
+			"industry": 107
+		},
+		{
+			"city": "Quảng Bình",
+			"year": 2018,
+			"industry": 107.2
+		},
+		{
+			"city": "Quảng Bình",
+			"year": 2019,
+			"industry": 107.4
+		},
+		{
+			"city": "Quảng Nam",
+			"year": 2012,
+			"industry": 118.2
+		},
+		{
+			"city": "Quảng Nam",
+			"year": 2013,
+			"industry": 109.6
+		},
+		{
+			"city": "Quảng Nam",
+			"year": 2014,
+			"industry": 105.3
+		},
+		{
+			"city": "Quảng Nam",
+			"year": 2015,
+			"industry": 135
+		},
+		{
+			"city": "Quảng Nam",
+			"year": 2016,
+			"industry": 128.2
+		},
+		{
+			"city": "Quảng Nam",
+			"year": 2017,
+			"industry": 95.2
+		},
+		{
+			"city": "Quảng Nam",
+			"year": 2018,
+			"industry": 102.5
+		},
+		{
+			"city": "Quảng Nam",
+			"year": 2019,
+			"industry": 104.1
+		},
+		{
+			"city": "Quảng Ngãi",
+			"year": 2012,
+			"industry": 107.7
+		},
+		{
+			"city": "Quảng Ngãi",
+			"year": 2013,
+			"industry": 116.6
+		},
+		{
+			"city": "Quảng Ngãi",
+			"year": 2014,
+			"industry": 86.9
+		},
+		{
+			"city": "Quảng Ngãi",
+			"year": 2015,
+			"industry": 108.6
+		},
+		{
+			"city": "Quảng Ngãi",
+			"year": 2016,
+			"industry": 100.4
+		},
+		{
+			"city": "Quảng Ngãi",
+			"year": 2017,
+			"industry": 100.6
+		},
+		{
+			"city": "Quảng Ngãi",
+			"year": 2018,
+			"industry": 108.5
+		},
+		{
+			"city": "Quảng Ngãi",
+			"year": 2019,
+			"industry": 113.3
+		},
+		{
+			"city": "Quảng Ninh",
+			"year": 2012,
+			"industry": 92
+		},
+		{
+			"city": "Quảng Ninh",
+			"year": 2013,
+			"industry": 102.3
+		},
+		{
+			"city": "Quảng Ninh",
+			"year": 2014,
+			"industry": 104.7
+		},
+		{
+			"city": "Quảng Ninh",
+			"year": 2015,
+			"industry": 105.2
+		},
+		{
+			"city": "Quảng Ninh",
+			"year": 2016,
+			"industry": 100.1
+		},
+		{
+			"city": "Quảng Ninh",
+			"year": 2017,
+			"industry": 103.1
+		},
+		{
+			"city": "Quảng Ninh",
+			"year": 2018,
+			"industry": 108.7
+		},
+		{
+			"city": "Quảng Ninh",
+			"year": 2019,
+			"industry": 113.5
+		},
+		{
+			"city": "Quảng Trị",
+			"year": 2012,
+			"industry": 113
+		},
+		{
+			"city": "Quảng Trị",
+			"year": 2013,
+			"industry": 109.2
+		},
+		{
+			"city": "Quảng Trị",
+			"year": 2014,
+			"industry": 104.8
+		},
+		{
+			"city": "Quảng Trị",
+			"year": 2015,
+			"industry": 113.6
+		},
+		{
+			"city": "Quảng Trị",
+			"year": 2016,
+			"industry": 112.3
+		},
+		{
+			"city": "Quảng Trị",
+			"year": 2017,
+			"industry": 115
+		},
+		{
+			"city": "Quảng Trị",
+			"year": 2018,
+			"industry": 109.2
+		},
+		{
+			"city": "Quảng Trị",
+			"year": 2019,
+			"industry": 109.8
+		},
+		{
+			"city": "Sóc Trăng",
+			"year": 2012,
+			"industry": 102
+		},
+		{
+			"city": "Sóc Trăng",
+			"year": 2013,
+			"industry": 104.7
+		},
+		{
+			"city": "Sóc Trăng",
+			"year": 2014,
+			"industry": 125.4
+		},
+		{
+			"city": "Sóc Trăng",
+			"year": 2015,
+			"industry": 103.5
+		},
+		{
+			"city": "Sóc Trăng",
+			"year": 2016,
+			"industry": 111.5
+		},
+		{
+			"city": "Sóc Trăng",
+			"year": 2017,
+			"industry": 110.8
+		},
+		{
+			"city": "Sóc Trăng",
+			"year": 2018,
+			"industry": 106.8
+		},
+		{
+			"city": "Sóc Trăng",
+			"year": 2019,
+			"industry": 107.9
+		},
+		{
+			"city": "Sơn La",
+			"year": 2012,
+			"industry": 117
+		},
+		{
+			"city": "Sơn La",
+			"year": 2013,
+			"industry": 171
+		},
+		{
+			"city": "Sơn La",
+			"year": 2014,
+			"industry": 106.2
+		},
+		{
+			"city": "Sơn La",
+			"year": 2015,
+			"industry": 102.7
+		},
+		{
+			"city": "Sơn La",
+			"year": 2016,
+			"industry": 102.2
+		},
+		{
+			"city": "Sơn La",
+			"year": 2017,
+			"industry": 121.8
+		},
+		{
+			"city": "Sơn La",
+			"year": 2018,
+			"industry": 103
+		},
+		{
+			"city": "Sơn La",
+			"year": 2019,
+			"industry": 73.1
+		},
+		{
+			"city": "Tây Ninh",
+			"year": 2012,
+			"industry": 121.4
+		},
+		{
+			"city": "Tây Ninh",
+			"year": 2013,
+			"industry": 119.2
+		},
+		{
+			"city": "Tây Ninh",
+			"year": 2014,
+			"industry": 115.5
+		},
+		{
+			"city": "Tây Ninh",
+			"year": 2015,
+			"industry": 114.1
+		},
+		{
+			"city": "Tây Ninh",
+			"year": 2016,
+			"industry": 111.8
+		},
+		{
+			"city": "Tây Ninh",
+			"year": 2017,
+			"industry": 115.5
+		},
+		{
+			"city": "Tây Ninh",
+			"year": 2018,
+			"industry": 115.8
+		},
+		{
+			"city": "Tây Ninh",
+			"year": 2019,
+			"industry": 116
+		},
+		{
+			"city": "Thái Bình",
+			"year": 2012,
+			"industry": 106.5
+		},
+		{
+			"city": "Thái Bình",
+			"year": 2013,
+			"industry": 114.1
+		},
+		{
+			"city": "Thái Bình",
+			"year": 2014,
+			"industry": 101.8
+		},
+		{
+			"city": "Thái Bình",
+			"year": 2015,
+			"industry": 108.3
+		},
+		{
+			"city": "Thái Bình",
+			"year": 2016,
+			"industry": 112.3
+		},
+		{
+			"city": "Thái Bình",
+			"year": 2017,
+			"industry": 116.5
+		},
+		{
+			"city": "Thái Bình",
+			"year": 2018,
+			"industry": 115.1
+		},
+		{
+			"city": "Thái Bình",
+			"year": 2019,
+			"industry": 115.9
+		},
+		{
+			"city": "Thái Nguyên",
+			"year": 2012,
+			"industry": 106.7
+		},
+		{
+			"city": "Thái Nguyên",
+			"year": 2013,
+			"industry": 102.1
+		},
+		{
+			"city": "Thái Nguyên",
+			"year": 2014,
+			"industry": 322.8
+		},
+		{
+			"city": "Thái Nguyên",
+			"year": 2015,
+			"industry": 176
+		},
+		{
+			"city": "Thái Nguyên",
+			"year": 2016,
+			"industry": 123.7
+		},
+		{
+			"city": "Thái Nguyên",
+			"year": 2017,
+			"industry": 118.3
+		},
+		{
+			"city": "Thái Nguyên",
+			"year": 2018,
+			"industry": 112.1
+		},
+		{
+			"city": "Thái Nguyên",
+			"year": 2019,
+			"industry": 111.1
+		},
+		{
+			"city": "Thanh Hoá",
+			"year": 2012,
+			"industry": 107.9
+		},
+		{
+			"city": "Thanh Hoá",
+			"year": 2013,
+			"industry": 108.2
+		},
+		{
+			"city": "Thanh Hoá",
+			"year": 2014,
+			"industry": 106.9
+		},
+		{
+			"city": "Thanh Hoá",
+			"year": 2015,
+			"industry": 109.8
+		},
+		{
+			"city": "Thanh Hoá",
+			"year": 2016,
+			"industry": 109.2
+		},
+		{
+			"city": "Thanh Hoá",
+			"year": 2017,
+			"industry": 109.2
+		},
+		{
+			"city": "Thanh Hoá",
+			"year": 2018,
+			"industry": 134.2
+		},
+		{
+			"city": "Thanh Hoá",
+			"year": 2019,
+			"industry": 115.8
+		},
+		{
+			"city": "Thừa Thiên Huế",
+			"year": 2012,
+			"industry": 112.6
+		},
+		{
+			"city": "Thừa Thiên Huế",
+			"year": 2013,
+			"industry": 108.1
+		},
+		{
+			"city": "Thừa Thiên Huế",
+			"year": 2014,
+			"industry": 111.2
+		},
+		{
+			"city": "Thừa Thiên Huế",
+			"year": 2015,
+			"industry": 109.4
+		},
+		{
+			"city": "Thừa Thiên Huế",
+			"year": 2016,
+			"industry": 110.3
+		},
+		{
+			"city": "Thừa Thiên Huế",
+			"year": 2017,
+			"industry": 113.4
+		},
+		{
+			"city": "Thừa Thiên Huế",
+			"year": 2018,
+			"industry": 108
+		},
+		{
+			"city": "Thừa Thiên Huế",
+			"year": 2019,
+			"industry": 108.5
+		},
+		{
+			"city": "Tiền Giang",
+			"year": 2012,
+			"industry": 118.9
+		},
+		{
+			"city": "Tiền Giang",
+			"year": 2013,
+			"industry": 112.1
+		},
+		{
+			"city": "Tiền Giang",
+			"year": 2014,
+			"industry": 108.1
+		},
+		{
+			"city": "Tiền Giang",
+			"year": 2015,
+			"industry": 115.2
+		},
+		{
+			"city": "Tiền Giang",
+			"year": 2016,
+			"industry": 114.8
+		},
+		{
+			"city": "Tiền Giang",
+			"year": 2017,
+			"industry": 115
+		},
+		{
+			"city": "Tiền Giang",
+			"year": 2018,
+			"industry": 112.1
+		},
+		{
+			"city": "Tiền Giang",
+			"year": 2019,
+			"industry": 111.1
+		},
+		{
+			"city": "TP.Hồ Chí Minh",
+			"year": 2012,
+			"industry": 105
+		},
+		{
+			"city": "TP.Hồ Chí Minh",
+			"year": 2013,
+			"industry": 106.3
+		},
+		{
+			"city": "TP.Hồ Chí Minh",
+			"year": 2014,
+			"industry": 106.8
+		},
+		{
+			"city": "TP.Hồ Chí Minh",
+			"year": 2015,
+			"industry": 107.2
+		},
+		{
+			"city": "TP.Hồ Chí Minh",
+			"year": 2016,
+			"industry": 107.3
+		},
+		{
+			"city": "TP.Hồ Chí Minh",
+			"year": 2017,
+			"industry": 107.9
+		},
+		{
+			"city": "TP.Hồ Chí Minh",
+			"year": 2018,
+			"industry": 108
+		},
+		{
+			"city": "TP.Hồ Chí Minh",
+			"year": 2019,
+			"industry": 107.3
+		},
+		{
+			"city": "Trà Vinh",
+			"year": 2012,
+			"industry": 116.2
+		},
+		{
+			"city": "Trà Vinh",
+			"year": 2013,
+			"industry": 106.3
+		},
+		{
+			"city": "Trà Vinh",
+			"year": 2014,
+			"industry": 110.4
+		},
+		{
+			"city": "Trà Vinh",
+			"year": 2015,
+			"industry": 112.6
+		},
+		{
+			"city": "Trà Vinh",
+			"year": 2016,
+			"industry": 117.3
+		},
+		{
+			"city": "Trà Vinh",
+			"year": 2017,
+			"industry": 143
+		},
+		{
+			"city": "Trà Vinh",
+			"year": 2018,
+			"industry": 114.3
+		},
+		{
+			"city": "Trà Vinh",
+			"year": 2019,
+			"industry": 127.7
+		},
+		{
+			"city": "Tuyên Quang",
+			"year": 2012,
+			"industry": 120.8
+		},
+		{
+			"city": "Tuyên Quang",
+			"year": 2013,
+			"industry": 105.5
+		},
+		{
+			"city": "Tuyên Quang",
+			"year": 2014,
+			"industry": 105.2
+		},
+		{
+			"city": "Tuyên Quang",
+			"year": 2015,
+			"industry": 99.9
+		},
+		{
+			"city": "Tuyên Quang",
+			"year": 2016,
+			"industry": 83.8
+		},
+		{
+			"city": "Tuyên Quang",
+			"year": 2017,
+			"industry": 109.4
+		},
+		{
+			"city": "Tuyên Quang",
+			"year": 2018,
+			"industry": 108.2
+		},
+		{
+			"city": "Tuyên Quang",
+			"year": 2019,
+			"industry": 107
+		},
+		{
+			"city": "Vĩnh Long",
+			"year": 2012,
+			"industry": 102.1
+		},
+		{
+			"city": "Vĩnh Long",
+			"year": 2013,
+			"industry": 112
+		},
+		{
+			"city": "Vĩnh Long",
+			"year": 2014,
+			"industry": 109.8
+		},
+		{
+			"city": "Vĩnh Long",
+			"year": 2015,
+			"industry": 111.6
+		},
+		{
+			"city": "Vĩnh Long",
+			"year": 2016,
+			"industry": 111.3
+		},
+		{
+			"city": "Vĩnh Long",
+			"year": 2017,
+			"industry": 109.1
+		},
+		{
+			"city": "Vĩnh Long",
+			"year": 2018,
+			"industry": 109.6
+		},
+		{
+			"city": "Vĩnh Long",
+			"year": 2019,
+			"industry": 115
+		},
+		{
+			"city": "Vĩnh Phúc",
+			"year": 2012,
+			"industry": 97
+		},
+		{
+			"city": "Vĩnh Phúc",
+			"year": 2013,
+			"industry": 114
+		},
+		{
+			"city": "Vĩnh Phúc",
+			"year": 2014,
+			"industry": 97.1
+		},
+		{
+			"city": "Vĩnh Phúc",
+			"year": 2015,
+			"industry": 101.6
+		},
+		{
+			"city": "Vĩnh Phúc",
+			"year": 2016,
+			"industry": 105.8
+		},
+		{
+			"city": "Vĩnh Phúc",
+			"year": 2017,
+			"industry": 107.5
+		},
+		{
+			"city": "Vĩnh Phúc",
+			"year": 2018,
+			"industry": 114.5
+		},
+		{
+			"city": "Vĩnh Phúc",
+			"year": 2019,
+			"industry": 111.1
+		},
+		{
+			"city": "Yên Bái",
+			"year": 2012,
+			"industry": 114.5
+		},
+		{
+			"city": "Yên Bái",
+			"year": 2013,
+			"industry": 112.3
+		},
+		{
+			"city": "Yên Bái",
+			"year": 2014,
+			"industry": 104.8
+		},
+		{
+			"city": "Yên Bái",
+			"year": 2015,
+			"industry": 103.7
+		},
+		{
+			"city": "Yên Bái",
+			"year": 2016,
+			"industry": 105.3
+		},
+		{
+			"city": "Yên Bái",
+			"year": 2017,
+			"industry": 106.9
+		},
+		{
+			"city": "Yên Bái",
+			"year": 2018,
+			"industry": 104.3
+		},
+		{
+			"city": "Yên Bái",
+			"year": 2019,
+			"industry": 110.9
+		}
+	]
+}
