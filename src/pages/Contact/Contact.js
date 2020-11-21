@@ -1,13 +1,15 @@
 import React from "react";
-import { InfoSection } from "../../components";
+import { InfoSection, Navbar, Footer } from "../../components";
 import { homeObjOne, homeObjTwo } from "./Data";
-const Home = () => {
+const Contact = () => {
 	return (
 		<>
+			<Navbar />
 			<InfoSection {...homeObjOne} />
 			<InfoSection {...homeObjTwo} />
+			<Footer />
 		</>
 	);
 };
 
-export default Home;
+export default Contact;

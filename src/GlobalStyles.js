@@ -1,33 +1,36 @@
 import styled, { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
- *{
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
-   font-family: "Source Sans Pro", sans-serif;
- }
-  ::-webkit-scrollbar {
-    width: 12px;
-  }
- 
-  /* Track */
-  ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    background: rgba(0,0,0,0.8); 
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
-  }
-  ::-webkit-scrollbar-thumb:window-inactive {
-    background: rgba(0,0,0,0.4); 
-  }
+	*{
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		font-family: "Source Sans Pro", sans-serif;
+	}
+
+	/* Custom scrollbar */
+	::-webkit-scrollbar {
+		width: 12px;
+	}
+
+	/* Track */
+	::-webkit-scrollbar-track {
+		
+		-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+		-webkit-border-radius: 10px;
+		border-radius: 10px;
+	}
+
+	/* Handle */
+	::-webkit-scrollbar-thumb {
+		-webkit-border-radius: 10px;
+		border-radius: 10px;
+		background: rgba(0,0,0,0.8); 
+		-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+	}
+	::-webkit-scrollbar-thumb:window-inactive {
+		background: rgba(0,0,0,0.4); 
+	}
 `;
 
 export const Container = styled.div`
