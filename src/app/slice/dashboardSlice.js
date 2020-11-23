@@ -47,6 +47,9 @@ const dashboard = createSlice({
 				data: [],
 			},
 		},
+		modal: {
+			isDevelop: false,
+		},
 	},
 	reducers: {
 		setNavbarBtnOnClick: (state, action) => {
@@ -103,6 +106,9 @@ const dashboard = createSlice({
 			const data = action.payload;
 			state.viz.line.data = data;
 		},
+		setModal: (state, action) => {
+			state.modal[action.payload] = !state.modal[action.payload];
+		},
 	},
 });
 
@@ -124,6 +130,7 @@ export const {
 	setColumnData,
 	setLineCategories,
 	setLineData,
+	setModal,
 } = actions;
 
 export default reducer;
