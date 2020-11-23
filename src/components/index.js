@@ -6,3 +6,4 @@ export { default as Toolbar } from "./Toolbar/Toolbar";
 export { default as Properties } from "./Properties/Properties";
 export { default as WidgetInfo } from "./WidgetInfo/WidgetInfo";
 export { default as OutputLog } from "./OutputLog/OutputLog";
+export { default as ModalComponent } from "./Modal/Modal";
