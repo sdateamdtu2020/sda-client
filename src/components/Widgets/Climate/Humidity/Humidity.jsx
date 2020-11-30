@@ -90,12 +90,24 @@ const Humidity = ({ id, data, inputs, outputs }) => {
 					multiSelect
 				>
 					{treeHumidity.data.map((item) => (
-						<TreeItem nodeId={item.id} label={item.name} key={item.id} />
+						<TreeItem
+							nodeId={`${treeHumidity.id}-${item.id}`}
+							label={item.name}
+							key={item.id}
+						>
+							{item.children.map((children) => (
+								<TreeItem
+									nodeId={`${treeHumidity.id}-${item.id}-${children.id}`}
+									label={children.name}
+									key={children.id}
+								/>
+							))}
+						</TreeItem>
 					))}
 				</TreeView>
 			</div>
 			<div className={classes.footer}>
-				<p> Tip: Control-Click to select multiple areas</p>
+				<p> Tip: Control-Click to select multiple provinces</p>
 			</div>
 		</div>
 	);

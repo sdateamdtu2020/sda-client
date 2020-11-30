@@ -1,6 +1,6 @@
 import React from "react";
 
-import { useStyles } from "./IndustryProduction.elements";
+import { useStyles } from "./Rainfall.elements";
 import { IconButton } from "@material-ui/core";
 import { TreeView, TreeItem } from "@material-ui/lab";
 
@@ -8,14 +8,15 @@ import { AiFillCloseCircle } from "react-icons/ai";
 import { RiErrorWarningFill } from "react-icons/ri";
 import { MdExpandLess, MdExpandMore, MdExitToApp } from "react-icons/md";
 
+import { treeRainfall } from "../../../../data";
+
 import {
 	setItemIsSelect,
 	setInfoWidget,
-} from "../../../app/slice/dashboardSlice";
+} from "../../../../app/slice/dashboardSlice";
 import { useDispatch } from "react-redux";
-import { treeIndustry } from "../../../data";
 
-const IndustryProduction = ({ id, data, inputs, outputs }) => {
+const Rainfall = ({ id, data, inputs, outputs }) => {
 	const classes = useStyles();
 	const dispatch = useDispatch();
 
@@ -28,7 +29,7 @@ const IndustryProduction = ({ id, data, inputs, outputs }) => {
 
 	const handleSelect = (event, nodeIds) => {
 		setSelected(nodeIds);
-		let action = setItemIsSelect(nodeIds);
+		const action = setItemIsSelect(nodeIds);
 		dispatch(action);
 	};
 
@@ -43,7 +44,7 @@ const IndustryProduction = ({ id, data, inputs, outputs }) => {
 			<div className={classes.header}>
 				<div className={classes.headerLeft} />
 				<div className={classes.headerCenter}>
-					<p className={classes.headerTitle}>{treeIndustry.name}</p>
+					<p className={classes.headerTitle}>{treeRainfall.name}</p>
 				</div>
 				<div className={classes.headerRight}>
 					<IconButton
@@ -64,12 +65,7 @@ const IndustryProduction = ({ id, data, inputs, outputs }) => {
 					</IconButton>
 				</div>
 			</div>
-			<div
-				className={classes.body}
-				onDragStart={() => {
-					return false;
-				}}
-			>
+			<div className={classes.body}>
 				<div className={classes.portOut}>
 					{outputs.map((port) =>
 						React.cloneElement(port, {
@@ -93,15 +89,15 @@ const IndustryProduction = ({ id, data, inputs, outputs }) => {
 					onNodeSelect={handleSelect}
 					multiSelect
 				>
-					{treeIndustry.data.map((item) => (
+					{treeRainfall.data.map((item) => (
 						<TreeItem
-							nodeId={`${treeIndustry.id}-${item.id}`}
+							nodeId={`${treeRainfall.id}-${item.id}`}
 							label={item.name}
 							key={item.id}
 						>
 							{item.children.map((children) => (
 								<TreeItem
-									nodeId={`${treeIndustry.id}-${item.id}-${children.id}`}
+									nodeId={`${treeRainfall.id}-${item.id}-${children.id}`}
 									label={children.name}
 									key={children.id}
 								/>
@@ -117,4 +113,4 @@ const IndustryProduction = ({ id, data, inputs, outputs }) => {
 	);
 };
 
-export default IndustryProduction;
+export default Rainfall;

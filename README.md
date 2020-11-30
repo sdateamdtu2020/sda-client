@@ -56,11 +56,38 @@
 24. Viz `Industry/IndustryProduction` in TreeView
 25. Initial `Maps`
 26. Viz `Industry/IndustryProduction` 2012 in Maps
+27. Viz `Humidity` in `LineChart`
+28. Viz `Humidity` in `ColumnChart`
+29. Draw connector when onClick on RUN btn
+30. Clear all node when onClick on NEW btn
+31. Fetch API year viz in Maps
+32. Fetch API year viz in Table
+33. Fetch API City viz in Column Chart
+34. Fetch API City viz in Line Chart
+35. Fetch API City viz in Table
 
 ### Next Steps:
 
-- Viz `Humidity` in `LineChart`
-- Viz `Humidity` in `ColumnChart`
+- Fetch API humidity year viz in Chart
+- Fetch API rainfall year viz in Chart
+
+### API:
+
+- /climate/humidity/city/:cityid;
+- /climate/humidity/year/:yearid;
+- /climate/humidity/city/:cityid/year/yearid;
+
+- /climate/rainfall/city/:cityid;
+- /climate/rainfall/year/:yearid;
+- /climate/rainfall/city/:cityid/year/yearid;
+
+- /climate/temperature/city/:cityid;
+- /climate/temperature/year/:yearid;
+- /climate/temperature/city/:cityid/year/yearid;
+
+- /industry/city/:cityid;
+- /industry/year/:yearid;
+- /industry/city/:cityid/year/yearid;
 
 ### Directory Structure
 

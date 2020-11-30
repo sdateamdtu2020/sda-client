@@ -30,4 +30,11 @@ export const useStyles = makeStyles((theme) => ({
 			backgroundColor: theme.palette.primary.dark,
 		},
 	},
+	subHeader: {
+		background: theme.palette.primary.light,
+		borderBottom: "1px solid rgba(0,0,0,0.2)",
+		cursor: "default",
+		color: "white",
+		userSelect: "none",
+	},
 }));

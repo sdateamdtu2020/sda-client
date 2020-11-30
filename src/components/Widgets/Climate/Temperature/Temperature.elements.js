@@ -5,6 +5,7 @@ export const useStyles = makeStyles((theme) => ({
 		border: "1px solid #000",
 		borderRadius: "5px",
 		backgroundColor: "rgb(255, 255, 255, 0.9)",
+		maxWidth: "250px",
 	},
 	header: {
 		width: "100%",
@@ -38,5 +39,8 @@ export const useStyles = makeStyles((theme) => ({
 		height: "216px",
 		flexGrow: "1",
 		maxWidth: "400px",
+	},
+	footer: {
+		margin: "10px",
 	},
 }));

@@ -6,55 +6,83 @@ import HighchartsReact from "highcharts-react-official";
 
 const ColumnChart = () => {
 	const classes = useStyles();
-	const categories = useSelector(
+	const columnCategories = useSelector(
 		(state) => state.dashboard.viz.column.categories
 	);
-	const data = useSelector((state) => state.dashboard.viz.column.data);
+	const columnSeries = useSelector((state) => state.dashboard.viz.column.data);
+	const columnTitle = useSelector((state) => state.dashboard.viz.column.title);
+	const columnUnit = useSelector((state) => state.dashboard.viz.column.unit);
 
-	// eslint-disable-next-line
 	const [dataColumnChart, setDataColumnChart] = useState({
 		chart: {
 			type: "column",
 		},
 		title: {
-			text: "Yearly Average Humidity",
+			text: "",
 		},
 		subtitle: {
-			text: "Source: aaaaaa",
+			text: "Source: ",
 		},
 		xAxis: {
-			categories: [],
+			categories: [
+				"2012",
+				"2013",
+				"2014",
+				"2015",
+				"2016",
+				"2017",
+				"2018",
+				"2019",
+			],
+			crosshair: true,
 		},
 		yAxis: {
+			min: 0,
 			title: {
 				text: "",
 			},
 		},
+		tooltip: {
+			headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+			pointFormat:
+				'<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+				'<td style="padding:0"><b>{point.y:.1f}</b></td></tr>',
+			footerFormat: "</table>",
+			shared: true,
+			useHTML: true,
+		},
 		plotOptions: {
-			line: {
-				dataLabels: {
-					enabled: true,
-				},
-				enableMouseTracking: false,
+			column: {
+				pointPadding: 0.2,
+				borderWidth: 0,
 			},
 		},
 		series: [],
 	});
 
 	useEffect(() => {
-		if (data) {
-			const series = [];
-			data.map((item) => series.push(item));
+		if (columnSeries && columnCategories && columnTitle && columnUnit) {
 			setDataColumnChart({
 				...dataColumnChart,
 				xAxis: {
-					categories: categories,
+					...dataColumnChart.xAxis,
+					categories: columnCategories,
 				},
-				series: series,
+				series: columnSeries,
+				title: {
+					text: columnTitle,
+				},
+				yAxis: {
+					...dataColumnChart.yAxis,
+					title: {
+						text: columnUnit,
+					},
+				},
 			});
 		}
+
 		// eslint-disable-next-line
-	}, [data, categories]);
+	}, [columnSeries, columnCategories, columnTitle, columnUnit]);
 
 	return (
 		<div className={classes.columnChart}>

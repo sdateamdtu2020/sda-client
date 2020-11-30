@@ -24,16 +24,18 @@ export const useStyles = makeStyles((theme) => ({
 	headerRight: {
 		color: "white",
 	},
-	body: {
-		border: "1px solid #000",
+	port: {
 		margin: "10px",
-		overflowY: "auto",
-		minHeight: "100px",
 	},
 	portIn: {
 		position: "absolute",
 		top: "50%",
 		left: "-8px",
+	},
+	portOut: {
+		position: "absolute",
+		top: "50%",
+		right: "-8px",
 	},
 	button: {
 		margin: "10px 10px 0 10px",
