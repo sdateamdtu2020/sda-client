@@ -23,7 +23,7 @@ export const useStyles = makeStyles((theme) => ({
 	},
 	groupButton: {
 		display: "flex",
-		flexDirection: "column",
+		flexDirection: "row",
 		alignItems: "center",
 		"& > *": {
 			margin: theme.spacing(1),

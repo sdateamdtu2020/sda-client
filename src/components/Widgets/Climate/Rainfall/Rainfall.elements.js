@@ -5,6 +5,7 @@ export const useStyles = makeStyles((theme) => ({
 		border: "1px solid #000",
 		borderRadius: "5px",
 		backgroundColor: "rgb(255, 255, 255, 0.9)",
+		maxWidth: "200px",
 	},
 	header: {
 		width: "100%",
@@ -28,14 +29,18 @@ export const useStyles = makeStyles((theme) => ({
 		border: "1px solid #000",
 		margin: "10px",
 		overflowY: "auto",
-		minHeight: "100px",
 	},
-	portIn: {
+	portOut: {
 		position: "absolute",
 		top: "50%",
-		left: "-8px",
+		right: "-8px",
 	},
-	button: {
-		margin: "10px 10px 0 10px",
+	treeView: {
+		height: "216px",
+		flexGrow: "1",
+		maxWidth: "400px",
+	},
+	footer: {
+		margin: "10px",
 	},
 }));

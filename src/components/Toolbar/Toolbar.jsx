@@ -32,7 +32,11 @@ const Toolbar = ({ listItems }) => {
 				component="nav"
 				aria-labelledby="nested-list"
 				subheader={
-					<ListSubheader component="div" id="nested-list-subheader">
+					<ListSubheader
+						className={classes.subHeader}
+						component="div"
+						id="nested-list-subheader"
+					>
 						Widgets
 					</ListSubheader>
 				}

@@ -4,13 +4,20 @@ import { DASHBOARD } from "../ItemTypes";
 const dashboard = createSlice({
 	name: DASHBOARD,
 	initialState: {
-		navbarBtnOnClick: "",
+		navbar: {
+			newOnClick: false,
+			helpOnClick: false,
+			example1OnClick: false,
+			example2OnClick: false,
+			example3OnClick: false,
+			spinner: false,
+		},
 		toolbar: {
 			isOpen: {
-				climate: false,
+				climate: true,
 				atmosphere: false,
 				population: false,
-				industry: false,
+				industry: true,
 				forest: false,
 				operators: false,
 				visualization: true,
@@ -23,6 +30,9 @@ const dashboard = createSlice({
 		},
 		mashupContent: {
 			itemIsSelect: [],
+			port: [],
+			portCanLinked: false,
+			node: [],
 		},
 		info: {
 			isOpen: {
@@ -37,14 +47,32 @@ const dashboard = createSlice({
 			maps: {
 				title: "",
 				data: [],
+				dataClasses: [
+					{
+						to: 80,
+					},
+					{ from: 80, to: 100 },
+					{ from: 100, to: 110 },
+					{ from: 110, to: 120 },
+					{ from: 120, to: 130 },
+					{ from: 130 },
+				],
 			},
 			column: {
+				title: "",
 				categories: [],
 				data: [],
+				unit: "",
 			},
 			line: {
+				title: "",
 				categories: [],
 				data: [],
+				unit: "",
+			},
+			table: {
+				data: [],
+				unit: "",
 			},
 		},
 		modal: {
@@ -52,9 +80,6 @@ const dashboard = createSlice({
 		},
 	},
 	reducers: {
-		setNavbarBtnOnClick: (state, action) => {
-			state.navbarBtnOnClick = action.payload;
-		},
 		setToolbarIsOpen: (state, action) => {
 			state.toolbar.isOpen[action.payload] = !state.toolbar.isOpen[
 				action.payload
@@ -92,22 +117,87 @@ const dashboard = createSlice({
 		setTitleMaps: (state, action) => {
 			state.viz.maps.title = action.payload;
 		},
+		setModal: (state, action) => {
+			state.modal[action.payload] = !state.modal[action.payload];
+		},
+		setPortIsLinked: (state, action) => {
+			state.mashupContent.port = action.payload;
+		},
+		setPortCanLinked: (state, action) => {
+			state.mashupContent.portCanLinked = action.payload;
+		},
+		setIdNewNode: (state, action) => {
+			state.mashupContent.node.push(action.payload);
+		},
+		removeIdNode: (state, action) => {
+			state.mashupContent.node = [];
+			state.viz = {
+				maps: {
+					title: "",
+					data: [],
+				},
+				column: {
+					categories: [],
+					data: [],
+					unit: "",
+					title: "",
+				},
+				line: {
+					categories: [],
+					data: [],
+					unit: "",
+					title: "",
+				},
+				table: {
+					title: "",
+					data: [],
+					unit: "",
+				},
+			};
+		},
+		setNavbarNewOnClick: (state, action) => {
+			state.navbar.newOnClick = action.payload;
+		},
+		setSpinner: (state, action) => {
+			state.navbar.spinner = action.payload;
+		},
+		setColorRange: (state, action) => {
+			state.viz.maps.dataClasses = action.payload;
+		},
 		setColumnCategories: (state, action) => {
 			state.viz.column.categories = action.payload;
+		},
+		setLineCategories: (state, action) => {
+			state.viz.line.categories = action.payload;
 		},
 		setColumnData: (state, action) => {
 			const data = action.payload;
 			state.viz.column.data = data;
 		},
-		setLineCategories: (state, action) => {
-			state.viz.line.categories = action.payload;
+		setTableData: (state, action) => {
+			state.viz.table.data = action.payload;
 		},
 		setLineData: (state, action) => {
 			const data = action.payload;
 			state.viz.line.data = data;
 		},
-		setModal: (state, action) => {
-			state.modal[action.payload] = !state.modal[action.payload];
+		setColumnTitle: (state, action) => {
+			state.viz.column.title = action.payload;
+		},
+		setLineTitle: (state, action) => {
+			state.viz.line.title = action.payload;
+		},
+		setTableTitle: (state, action) => {
+			state.viz.table.title = action.payload;
+		},
+		setColumnUnit: (state, action) => {
+			state.viz.column.unit = action.payload;
+		},
+		setLineUnit: (state, action) => {
+			state.viz.line.unit = action.payload;
+		},
+		setTableUnit: (state, action) => {
+			state.viz.table.unit = action.payload;
 		},
 	},
 });
@@ -115,7 +205,6 @@ const dashboard = createSlice({
 const { reducer, actions } = dashboard;
 
 export const {
-	setNavbarBtnOnClick,
 	setToolbarIsOpen,
 	setIsDragItem,
 	setItemIsSelect,
@@ -131,6 +220,20 @@ export const {
 	setLineCategories,
 	setLineData,
 	setModal,
+	setTableData,
+	setPortIsLinked,
+	setPortCanLinked,
+	setIdNewNode,
+	removeIdNode,
+	setNavbarNewOnClick,
+	setSpinner,
+	setColorRange,
+	setColumnTitle,
+	setLineTitle,
+	setColumnUnit,
+	setLineUnit,
+	setTableUnit,
+	setTableTitle,
 } = actions;
 
 export default reducer;

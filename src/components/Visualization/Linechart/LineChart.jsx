@@ -9,10 +9,12 @@ import HighchartsReact from "highcharts-react-official";
 const LineChart = () => {
 	const classes = useStyles();
 
-	const categories = useSelector(
+	const lineCategories = useSelector(
 		(state) => state.dashboard.viz.line.categories
 	);
-	const data = useSelector((state) => state.dashboard.viz.line.data);
+	const lineSeries = useSelector((state) => state.dashboard.viz.line.data);
+	const lineTitle = useSelector((state) => state.dashboard.viz.line.title);
+	const lineUnit = useSelector((state) => state.dashboard.viz.line.unit);
 
 	// eslint-disable-next-line
 	const [dataLineChart, setDataLineChart] = useState({
@@ -20,44 +22,69 @@ const LineChart = () => {
 			type: "line",
 		},
 		title: {
-			text: "Yearly Average Humidity",
+			text: "",
 		},
 		subtitle: {
-			text: "Source: aaaaaa",
+			text: "Source: server.sda-research.ml",
 		},
 		xAxis: {
-			categories: [],
+			categories: [
+				"2012",
+				"2013",
+				"2014",
+				"2015",
+				"2016",
+				"2017",
+				"2018",
+				"2019",
+			],
+			crosshair: true,
 		},
 		yAxis: {
 			title: {
 				text: "",
 			},
 		},
+		tooltip: {
+			headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+			pointFormat:
+				'<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+				'<td style="padding:0"><b>{point.y:.1f}</b></td></tr>',
+			footerFormat: "</table>",
+			shared: true,
+			useHTML: true,
+		},
 		plotOptions: {
 			line: {
-				dataLabels: {
-					enabled: true,
-				},
-				enableMouseTracking: false,
+				pointPadding: 0.2,
+				borderWidth: 0,
 			},
 		},
 		series: [],
 	});
 
 	useEffect(() => {
-		if (data) {
-			const series = [];
-			data.map((item) => series.push(item));
+		if (lineSeries && lineCategories && lineTitle && lineUnit) {
 			setDataLineChart({
 				...dataLineChart,
 				xAxis: {
-					categories: categories,
+					...dataLineChart.xAxis,
+					categories: lineCategories,
 				},
-				series: series,
+				series: lineSeries,
+				title: {
+					text: lineTitle,
+				},
+				yAxis: {
+					title: {
+						text: lineUnit,
+					},
+				},
 			});
 		}
+
 		// eslint-disable-next-line
-	}, [data, categories]);
+	}, [lineSeries, lineCategories, lineTitle, lineUnit]);
 
 	return (
 		<div className={classes.lineChart}>

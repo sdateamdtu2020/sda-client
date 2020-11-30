@@ -19,8 +19,6 @@ import { useDispatch } from "react-redux";
 const Temperature = ({ id, data, inputs, outputs }) => {
 	const classes = useStyles();
 	const dispatch = useDispatch();
-	console.log("treeTemperature", treeTemperature);
-	console.log("id", id);
 
 	const [expanded, setExpanded] = React.useState([]);
 	const [selected, setSelected] = React.useState([]);
@@ -89,12 +87,17 @@ const Temperature = ({ id, data, inputs, outputs }) => {
 					selected={selected}
 					onNodeToggle={handleToggle}
 					onNodeSelect={handleSelect}
+					multiSelect
 				>
 					{treeTemperature.data.map((item) => (
-						<TreeItem nodeId={item.id} label={item.name} key={item.id}>
+						<TreeItem
+							nodeId={`${treeTemperature.id}-${item.id}`}
+							label={item.name}
+							key={item.id}
+						>
 							{item.children.map((children) => (
 								<TreeItem
-									nodeId={children.id}
+									nodeId={`${treeTemperature.id}-${item.id}-${children.id}`}
 									label={children.name}
 									key={children.id}
 								/>
@@ -102,6 +105,9 @@ const Temperature = ({ id, data, inputs, outputs }) => {
 						</TreeItem>
 					))}
 				</TreeView>
+			</div>
+			<div className={classes.footer}>
+				<p> Tip: Control-Click to select multiple provinces</p>
 			</div>
 		</div>
 	);
