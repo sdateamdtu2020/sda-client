@@ -9,11 +9,19 @@ import { ITEM } from "../../../app/ItemTypes";
 import {
 	setIsDragItem,
 	setInfoWidget,
-	setItemIndex,
-	setIndexCollapse,
+	setIndexItems,
+	setIndexItem,
+	setIndexChildren,
 } from "../../../app/slice/dashboardSlice";
 
-const ListItemComponent = ({ id, primary, index, indexCollapse, disabled }) => {
+const ListItemComponent = ({
+	id,
+	primary,
+	indexItems,
+	indexItem,
+	indexChildren,
+	disabled,
+}) => {
 	const classes = useStyles();
 	const dispatch = useDispatch();
 
@@ -23,20 +31,23 @@ const ListItemComponent = ({ id, primary, index, indexCollapse, disabled }) => {
 			isDragging: monitor.isDragging(),
 		}),
 		begin: () => {
-			dragging(id, index, indexCollapse);
+			dragging(id, indexItems, indexItem, indexChildren);
 		},
 		end: () => {
 			isDrop(id);
 		},
 	});
 
-	const dragging = (id, index, indexCollapse) => {
+	const dragging = (id, indexItems, indexItem, indexChildren) => {
 		let action = setIsDragItem(id);
 		dispatch(action);
-		action = setItemIndex(index);
+		action = setIndexItems(indexItems);
 		dispatch(action);
-		action = setIndexCollapse(indexCollapse);
+		action = setIndexItem(indexItem);
 		dispatch(action);
+		action = setIndexChildren(indexChildren);
+		dispatch(action);
+		console.log("id: ", id);
 		action = setInfoWidget(id);
 		dispatch(action);
 	};
@@ -44,9 +55,11 @@ const ListItemComponent = ({ id, primary, index, indexCollapse, disabled }) => {
 	const isDrop = (id) => {
 		let action = setIsDragItem("");
 		dispatch(action);
-		action = setItemIndex("");
+		action = setIndexItems("");
 		dispatch(action);
-		action = setIndexCollapse("");
+		action = setIndexItem("");
+		dispatch(action);
+		action = setIndexChildren("");
 		dispatch(action);
 	};
 

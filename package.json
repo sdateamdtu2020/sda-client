@@ -10,7 +10,7 @@
 		"@testing-library/react": "^9.3.2",
 		"@testing-library/user-event": "^7.1.2",
 		"axios": "^0.21.0",
-		"beautiful-react-diagrams": "^0.3.1",
+		"beautiful-react-diagrams": "^0.5.1",
 		"highcharts": "^8.2.2",
 		"highcharts-react-official": "^3.0.0",
 		"react": "^16.13.1",
@@ -28,7 +28,8 @@
 		"build": "react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
-		"deploy": "sh ./deploy-firebase"
+		"deploy": "sh ./deploy-firebase",
+		"deploysurge": "sh ./deploy-surge"
 	},
 	"eslintConfig": {
 		"extends": "react-app"

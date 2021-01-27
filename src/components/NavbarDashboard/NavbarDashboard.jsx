@@ -40,7 +40,7 @@ const NavbarDashboard = () => {
 					>
 						New
 					</Button>
-					<Button
+					{/* <Button
 						startIcon={<FaQuestionCircle />}
 						onClick={() => handleButton("help")}
 					>
@@ -48,7 +48,7 @@ const NavbarDashboard = () => {
 					</Button>
 					<Button onClick={() => handleButton("example-1")}>Example 1</Button>
 					<Button onClick={() => handleButton("example-2")}>Example 2</Button>
-					<Button onClick={() => handleButton("example-3")}>Example 3</Button>
+					<Button onClick={() => handleButton("example-3")}>Example 3</Button> */}
 				</ButtonGroup>
 				{spinner ? <CircularProgress color="secondary" /> : null}
 			</div>

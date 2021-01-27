@@ -28,16 +28,7 @@ const LineChart = () => {
 			text: "Source: server.sda-research.ml",
 		},
 		xAxis: {
-			categories: [
-				"2012",
-				"2013",
-				"2014",
-				"2015",
-				"2016",
-				"2017",
-				"2018",
-				"2019",
-			],
+			categories: [],
 			crosshair: true,
 		},
 		yAxis: {

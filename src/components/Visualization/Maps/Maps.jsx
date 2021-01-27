@@ -91,29 +91,32 @@ const Maps = () => {
 
 	useEffect(() => {
 		let dataMap = [];
-		dataMaps.map((item) => {
-			dataMap.push({
-				"hc-key": item[0],
-				value: item[1],
+		if (dataMaps && dataTitleMaps && dataClasses) {
+			dataMaps.map((item) => {
+				dataMap.push({
+					"hc-key": item[0],
+					value: item[1],
+				});
+				return null;
 			});
-			return null;
-		});
-		setMapsOptions({
-			...mapsOptions,
-			title: {
-				text: `${dataTitleMaps}`,
-			},
-			series: [
-				{
-					...mapsOptions.series[0],
-					data: dataMap,
+			setMapsOptions({
+				...mapsOptions,
+				title: {
+					text: `${dataTitleMaps}`,
 				},
-			],
-			colorAxis: {
-				...mapsOptions.colorAxis,
-				dataClasses: dataClasses,
-			},
-		});
+				series: [
+					{
+						...mapsOptions.series[0],
+						data: dataMap,
+					},
+				],
+				colorAxis: {
+					...mapsOptions.colorAxis,
+					dataClasses: dataClasses,
+				},
+			});
+		}
+
 		// eslint-disable-next-line
 	}, [dataMaps, dataTitleMaps, dataClasses]);
 

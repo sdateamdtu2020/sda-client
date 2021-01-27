@@ -15,14 +15,29 @@ import { useSelector } from "react-redux";
 
 const WidgetInfo = () => {
 	const classes = useStyles();
-	const widget = useSelector((state) => state.dashboard.info.widget);
+	const widgetId = useSelector((state) => state.dashboard.info.widget);
+
+	const getWidgetInfo = (id) => {
+		const idArray = id.split("-");
+		const dataCube = idArray[0];
+		const dataSet = idArray[1];
+		const filter = idArray[2];
+
+		if (filter === undefined) {
+			id = widgetInfos[dataCube][dataSet];
+		} else {
+			id = widgetInfos[dataCube][dataSet][filter];
+		}
+		return id;
+	};
+
 	return (
 		<div className={classes.widgetInfo}>
-			{widget ? (
+			{widgetId ? (
 				<TableContainer component={Paper}>
 					<Table className={classes.table} aria-label="table">
 						<TableBody>
-							{widgetInfos[widget].map((widget, index) => (
+							{getWidgetInfo(widgetId).map((widget, index) => (
 								<TableRow key={index}>
 									<TableCell>{widget.id}</TableCell>
 									<TableCell>{widget.info}</TableCell>
