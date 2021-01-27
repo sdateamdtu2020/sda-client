@@ -14,25 +14,66 @@ const dashboard = createSlice({
 		},
 		toolbar: {
 			isOpen: {
-				climate: true,
-				atmosphere: false,
-				population: false,
-				industry: true,
-				forest: false,
-				operators: false,
-				visualization: true,
+				climate: {
+					isOpen: false,
+					children: {
+						temperature: false,
+						humidity: false,
+						rainfall: false,
+					},
+				},
+				atmosphere: {
+					isOpen: false,
+				},
+				population: {
+					isOpen: false,
+					children: {
+						population: false,
+					},
+				},
+				industry: {
+					isOpen: false,
+					children: {
+						production: false,
+					},
+				},
+				forest: {
+					isOpen: false,
+					children: {
+						afforestation: false,
+						forestCoverArea: false,
+					},
+				},
+				operators: {
+					isOpen: false,
+				},
+				visualization: {
+					isOpen: true,
+					children: {
+						chart: true,
+					},
+				},
 			},
 			isDragItem: "",
 			item: {
-				index: "",
-				indexCollapse: "",
+				indexItems: "",
+				indexItem: "",
+				indexChildren: "",
 			},
 		},
 		mashupContent: {
+			itemIsSelectYear: [],
+			itemIsSelectCity: [],
 			itemIsSelect: [],
 			port: [],
 			portCanLinked: false,
 			node: [],
+			periodOfCity: {
+				city: "",
+				fromYear: "",
+				toYear: "",
+			},
+			merge: [],
 		},
 		info: {
 			isOpen: {
@@ -70,9 +111,27 @@ const dashboard = createSlice({
 				data: [],
 				unit: "",
 			},
+			lineTwoAxis: {
+				title: "",
+				yAxis: [],
+				data: [],
+				categories: [],
+			},
+			lineThreeAxis: {
+				title: "",
+				yAxis: [],
+				data: [],
+				categories: [],
+			},
 			table: {
 				data: [],
 				unit: "",
+			},
+			merge: {
+				categories: [],
+				data: [],
+				title: "",
+				yAxis: [],
 			},
 		},
 		modal: {
@@ -81,9 +140,16 @@ const dashboard = createSlice({
 	},
 	reducers: {
 		setToolbarIsOpen: (state, action) => {
-			state.toolbar.isOpen[action.payload] = !state.toolbar.isOpen[
+			state.toolbar.isOpen[action.payload].isOpen = !state.toolbar.isOpen[
 				action.payload
-			];
+			].isOpen;
+		},
+		setToolbarChildrenIsOpen: (state, action) => {
+			const cube = action.payload.split("-")[0];
+			const idChildren = action.payload.split("-")[1];
+			state.toolbar.isOpen[cube].children[idChildren] = !state.toolbar.isOpen[
+				cube
+			].children[idChildren];
 		},
 		setIsDragItem: (state, action) => {
 			state.toolbar.isDragItem = action.payload;
@@ -97,11 +163,14 @@ const dashboard = createSlice({
 		setInfoWidget: (state, action) => {
 			state.info.widget = action.payload;
 		},
-		setItemIndex: (state, action) => {
-			state.toolbar.item.index = action.payload;
+		setIndexItems: (state, action) => {
+			state.toolbar.item.indexItems = action.payload;
 		},
-		setIndexCollapse: (state, action) => {
-			state.toolbar.item.indexCollapse = action.payload;
+		setIndexItem: (state, action) => {
+			state.toolbar.item.indexItem = action.payload;
+		},
+		setIndexChildren: (state, action) => {
+			state.toolbar.item.indexChildren = action.payload;
 		},
 		setOutput: (state, action) => {
 			if (action.payload === "clear") {
@@ -199,6 +268,60 @@ const dashboard = createSlice({
 		setTableUnit: (state, action) => {
 			state.viz.table.unit = action.payload;
 		},
+		setPeriodOfCityName: (state, action) => {
+			state.mashupContent.periodOfCity.city = action.payload;
+		},
+		setPeriodOfCityFromYear: (state, action) => {
+			state.mashupContent.periodOfCity.fromYear = action.payload;
+		},
+		setPeriodOfCityToYear: (state, action) => {
+			state.mashupContent.periodOfCity.toYear = action.payload;
+		},
+		setMerge: (state, action) => {
+			state.mashupContent.merge = action.payload;
+		},
+		setMergeCategories: (state, action) => {
+			state.viz.merge.categories = action.payload;
+		},
+		setMergeData: (state, action) => {
+			state.viz.merge.data = action.payload;
+		},
+		setMergeTitle: (state, action) => {
+			state.viz.merge.title = action.payload;
+		},
+		setMergeYAxis: (state, action) => {
+			state.viz.merge.yAxis = action.payload;
+		},
+		setLineTwoAxisTitle: (state, action) => {
+			state.viz.lineTwoAxis.title = action.payload;
+		},
+		setLineTwoAxisYAxis: (state, action) => {
+			state.viz.lineTwoAxis.yAxis = action.payload;
+		},
+		setLineTwoAxisData: (state, action) => {
+			state.viz.lineTwoAxis.data = action.payload;
+		},
+		setLineTwoAxisCategories: (state, action) => {
+			state.viz.lineTwoAxis.categories = action.payload;
+		},
+		setLineThreeAxisTitle: (state, action) => {
+			state.viz.lineThreeAxis.title = action.payload;
+		},
+		setLineThreeAxisYAxis: (state, action) => {
+			state.viz.lineThreeAxis.yAxis = action.payload;
+		},
+		setLineThreeAxisData: (state, action) => {
+			state.viz.lineThreeAxis.data = action.payload;
+		},
+		setLineThreeAxisCategories: (state, action) => {
+			state.viz.lineThreeAxis.categories = action.payload;
+		},
+		setItemIsSelectYear: (state, action) => {
+			state.mashupContent.itemIsSelectYear = action.payload;
+		},
+		setItemIsSelectCity: (state, action) => {
+			state.mashupContent.itemIsSelectCity = action.payload;
+		},
 	},
 });
 
@@ -210,8 +333,9 @@ export const {
 	setItemIsSelect,
 	setInfoIsOpen,
 	setInfoWidget,
-	setItemIndex,
-	setIndexCollapse,
+	setIndexItems,
+	setIndexItem,
+	setIndexChildren,
 	setOutput,
 	setTitleMaps,
 	setMapsData,
@@ -234,6 +358,25 @@ export const {
 	setLineUnit,
 	setTableUnit,
 	setTableTitle,
+	setToolbarChildrenIsOpen,
+	setPeriodOfCityName,
+	setPeriodOfCityFromYear,
+	setPeriodOfCityToYear,
+	setMerge,
+	setMergeCategories,
+	setMergeTitle,
+	setMergeData,
+	setLineTwoAxisTitle,
+	setLineTwoAxisYAxis,
+	setLineTwoAxisData,
+	setMergeYAxis,
+	setLineTwoAxisCategories,
+	setLineThreeAxisTitle,
+	setLineThreeAxisYAxis,
+	setLineThreeAxisData,
+	setLineThreeAxisCategories,
+	setItemIsSelectYear,
+	setItemIsSelectCity,
 } = actions;
 
 export default reducer;

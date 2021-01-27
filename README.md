@@ -1,27 +1,47 @@
-# Mini Project: Smart Dashboard Application - Client
+# Science Research Project: Smart Dashboard Application - Client
 
-## Date: 20 - Aug - 2020 to present
+## Date: 20 - Aug to 25 - Dec - 2020
 
 ### Functions:
 
 - Scientific research: Environment Analysis System in Vietnam
-- Data Visualization in Charts, Maps:
+- Dataset:
   - Climate:
-    - Temperature
-      - Filter by Year
-    - Humidity
-      - Filter by City
-    - Rainfall
-  - Atmosphere
-  - Population:
+    - [x] Temperature
+    - [x] Humidity
+    - [x] Rainfall
+  - [ ] Atmosphere
+  - [x] Population
   - Industry
-    - Filter by Year
+    - [x] Industry Production
   - Forest
-  - Operators
+    - [x] Forest Cover Area
+    - [x] AfForestation
+- Feature:
+  - [x] Filter by year
+  - [x] Filter by city
+  - [x] Filter by year & cities
+  - [x] Filter by period of ciy
+  - [x] Statistics merge
+  - [ ] Simple Merge
+- Visualization
+  - [x] Maps
+  - [x] Table
+  - Charts
+    - [x] Column
+    - [x] Line
+    - [ ] Pie
+    - [x] Two Y-Axis Charts
+    - [x] Three Y-Axis Charts
 
 ### Releases
 
 - https://sda-research.ml
+- http://sda-research.surge.sh
+
+### Server Endpoint:
+
+http://server.sda-research.ml
 
 ### Screenshot
 
@@ -60,34 +80,22 @@
 28. Viz `Humidity` in `ColumnChart`
 29. Draw connector when onClick on RUN btn
 30. Clear all node when onClick on NEW btn
-31. Fetch API year viz in Maps
-32. Fetch API year viz in Table
-33. Fetch API City viz in Column Chart
-34. Fetch API City viz in Line Chart
-35. Fetch API City viz in Table
+31. Visualization `Humidity`
+32. Visualization `Temperature`
+33. Visualization `Rainfall`
+34. Visualization `Industry`
+35. Visualization `Forestation`
+36. Visualization `Population`
+37. Merge two data cube
+38. Visualization when merge two data cube
+39. Merge three data cube
+40. Visualization when merge three data cube
 
 ### Next Steps:
 
-- Fetch API humidity year viz in Chart
-- Fetch API rainfall year viz in Chart
-
-### API:
-
-- /climate/humidity/city/:cityid;
-- /climate/humidity/year/:yearid;
-- /climate/humidity/city/:cityid/year/yearid;
-
-- /climate/rainfall/city/:cityid;
-- /climate/rainfall/year/:yearid;
-- /climate/rainfall/city/:cityid/year/yearid;
-
-- /climate/temperature/city/:cityid;
-- /climate/temperature/year/:yearid;
-- /climate/temperature/city/:cityid/year/yearid;
-
-- /industry/city/:cityid;
-- /industry/year/:yearid;
-- /industry/city/:cityid/year/yearid;
+- Bug:
+  - Select year, cities, click run > working > After that, change another year > click run > Bug: city/2013/year/2013. Only can select year and cities again so that is working
+  - Select 1 city and multi years is not working
 
 ### Directory Structure
 
@@ -101,32 +109,77 @@
 ├── firebase.json
 ├── .gitignore
 └── src
+    ├── api
+        ├── vnId.js
+        └── index.js
     ├── app
         ├── store.js
+        ├── ItemTypes.js
+        ├── slice
+          └── dashboardSlice.js
     ├── assets
         └── img
     ├── components
         ├── Footer
         ├── InfoSection
+        ├── Modal
         ├── Navbar
+        ├── NavbarDashboard
+        ├── OutputLog
+        ├── Properties
+        ├── Toolbar
+          └── ListItem
         ├── UI
+          ├── NotFound
+          ├── Spinner
+          └── index.js
+        ├── Visualization
+          ├── ColumnChart
+          ├── LineChart
+          ├── LineChartThreeAxis
+          ├── LineChartTwoAxis
+          ├── Maps
+          ├── Table
+        ├── WidgetInfo
+        ├── Widget
+          ├── Climate
+            ├── Humidity
+            ├── Rainfall
+            └── Temperature
+          ├── Forest
+            └── Afforestation
+          ├── Industry
+            └── Industry Production
+          ├── Operators
+            └── Statistic Merge
+          ├── Population
+           └── Population
+          ├── Visualization
+            ├── ColumnChart
+            ├── LineChart
+            ├── LineChartThreeAxis
+            ├── LineChartTwoAxis
+            ├── Maps
+            └── Table
+          └── index.js
         ├── index.js
         └── ScrollToTop.jsx
+    ├── containers
+        ├── Info
+        ├── MashupContent
+        ├── ModalIsDevelop
+        └── Dashboard
+    ├── data
+        └── index.js
     ├── pages
         ├── About
-            ├── About.js
-            └── Data.js
         ├── Contact
-            ├── Contact.js
-            └── Data.js
         ├── Dashboard
-            ├── Dashboard.js
-            └── Data.js
         └── HomePage
-            ├── Homepage.js
-            └── Data.js
     ├── App.js
     ├── GlobalStyles.js
+    ├── deploy-firebase
+    ├── deploy-surge
     └── index.js
 ```
 
@@ -136,6 +189,9 @@ For the project to build, these must exist with exact filenames:
 - `src/index.js` is the entry point
 - `src/GlobalStyles.js` is the Global Styles
 - `src/App.js` is the Router
+- `src/api` is
+- `src/containers` is
+- `src/data` is
 
 ## Installation Guide
 

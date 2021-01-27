@@ -32,7 +32,7 @@ const TableComponent = () => {
 						<TableRow>
 							<TableCell align="left">City</TableCell>
 							<TableCell align="left">Year</TableCell>
-							<TableCell align="left">Value</TableCell>
+							<TableCell align="right">Value</TableCell>
 						</TableRow>
 					</TableHead>
 					<TableBody>

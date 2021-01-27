@@ -16,8 +16,20 @@ const OutputLog = () => {
 	const output = useSelector((state) => state.dashboard.info.output);
 
 	const nameOutput = (id) => {
-		const name = widgetInfos[id][0].info;
-		return name;
+		const idArray = id.split("-");
+		const dataCube = idArray[0];
+		const dataSet = idArray[1];
+		const filter = idArray[2];
+
+		let name;
+
+		if (filter === undefined) {
+			name = widgetInfos[dataCube][dataSet];
+		} else {
+			name = widgetInfos[dataCube][dataSet][filter];
+		}
+
+		return name[0].info;
 	};
 
 	useEffect(() => {

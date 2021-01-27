@@ -12,7 +12,10 @@ import {
 import { MdExpandLess, MdExpandMore } from "react-icons/md";
 
 import { useDispatch, useSelector } from "react-redux";
-import { setToolbarIsOpen } from "../../app/slice/dashboardSlice";
+import {
+	setToolbarIsOpen,
+	setToolbarChildrenIsOpen,
+} from "../../app/slice/dashboardSlice";
 
 import ListItemComponent from "./ListItem/ListItem";
 
@@ -22,7 +25,13 @@ const Toolbar = ({ listItems }) => {
 	const isOpen = useSelector((state) => state.dashboard.toolbar.isOpen);
 
 	const handleClick = (object) => {
+		console.log("object: ", object);
 		const action = setToolbarIsOpen(object);
+		dispatch(action);
+	};
+
+	const handleClickChildren = (object) => {
+		const action = setToolbarChildrenIsOpen(object);
 		dispatch(action);
 	};
 
@@ -41,35 +50,75 @@ const Toolbar = ({ listItems }) => {
 					</ListSubheader>
 				}
 			>
-				{listItems.map((item, index) => (
-					<div key={item.id}>
+				{listItems.map((items, indexItems) => (
+					<div key={items.id}>
 						<ListItem
 							className={`${classes.listItem} ${
-								isOpen[item.id] ? classes.isOpen : null
+								isOpen[items.id].isOpen ? classes.isOpen : null
 							}`}
 							button
-							onClick={() => handleClick(item.id)}
+							onClick={() => handleClick(items.id)}
 						>
-							<ListItemText primary={item.name} />
-							{isOpen[item.id] ? <MdExpandLess /> : <MdExpandMore />}
+							<ListItemText primary={items.name} />
+							{isOpen[items.id].isOpen ? <MdExpandLess /> : <MdExpandMore />}
 						</ListItem>
 						<Collapse
 							className={classes.collapse}
-							in={isOpen[item.id]}
+							in={isOpen[items.id].isOpen}
 							timeout="auto"
 							unmountOnExit
 						>
 							<List component="div" disablePadding>
-								{item.collapseItem.map((itemCollapse, indexCollapse) => (
-									<ListItemComponent
-										key={itemCollapse.id}
-										primary={itemCollapse.name}
-										id={itemCollapse.id}
-										index={index}
-										indexCollapse={indexCollapse}
-										disabled={itemCollapse.disabled}
-									/>
-								))}
+								{items.collapseItem.map((item, indexItem) => {
+									return item.children === undefined ? (
+										<ListItemComponent
+											key={item.id}
+											primary={item.name}
+											id={`${items.id}-${item.id}`}
+											indexItems={indexItems}
+											indexItem={indexItem}
+											indexChildren="0"
+											disabled={item.disabled}
+										/>
+									) : (
+										<div key={item.id}>
+											<ListItem
+												className={`${classes.listItem}`}
+												button
+												onClick={() =>
+													handleClickChildren(`${items.id}-${item.id}`)
+												}
+											>
+												<ListItemText primary={item.name} />
+												{isOpen[items.id].children[item.id] ? (
+													<MdExpandLess />
+												) : (
+													<MdExpandMore />
+												)}
+											</ListItem>
+											<Collapse
+												className={classes.collapse}
+												in={isOpen[items.id].children[item.id]}
+												timeout="auto"
+												unmountOnExit
+											>
+												<List component="div" disablePadding>
+													{item.children.map((children, indexChildren) => (
+														<ListItemComponent
+															key={`${item.id}-${children.id}`}
+															primary={children.name}
+															indexItems={indexItems}
+															indexItem={indexItem}
+															indexChildren={indexChildren}
+															disabled={children.disabled}
+															id={`${items.id}-${item.id}-${children.id}`}
+														/>
+													))}
+												</List>
+											</Collapse>
+										</div>
+									);
+								})}
 							</List>
 						</Collapse>
 					</div>

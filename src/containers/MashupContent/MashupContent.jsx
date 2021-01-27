@@ -7,35 +7,98 @@ import "beautiful-react-diagrams/styles.css";
 import { useDrop } from "react-dnd";
 import { useSelector, useDispatch } from "react-redux";
 import {
-	CLIMATE_HUMIDITY,
-	CLIMATE_TEMPERATURE,
-	CLIMATE_RAINFALL,
 	ITEM,
-	VIZ_LINECHART,
-	VIZ_COLUMNCHART,
-	VIZ_MAPS,
+	CLIMATE,
+	HUMIDITY,
+	YEAR,
+	CITY,
+	PERIOD_OF_CITY,
+	VISUALIZATION,
+	CHART,
+	COLUMN,
+	LINE,
+	MAPS,
+	TABLE,
+	TEMPERATURE,
+	RAINFALL,
+	STATISTICS_MERGE,
+	OPERATORS,
+	LINE_TWO_AXIS,
+	LINE_THREE_AXIS,
+	INDUSTRY,
 	INDUSTRY_PRODUCTION,
-	OPERATOR_STATISTIC_MERGE,
-	VIZ_TABLE,
+	FOREST,
+	AFFORESTATION,
+	POPULATION,
+	POPULATION_PRODUCTION,
+	FOREST_COVER_AREA,
 } from "../../app/ItemTypes";
 
 import {
-	Humidity,
-	LineChart,
+	HumidityYear,
+	HumidityCity,
+	HumidityPeriodOfCity,
 	ColumnChart,
 	Maps,
-	Industry,
-	Temperature,
-	StatisticsMerge,
+	LineChart,
 	Table,
-	Rainfall,
+	TemperatureCity,
+	TemperatureYear,
+	TemperaturePeriodOfCity,
+	RainfallYear,
+	RainfallCity,
+	RainfallPeriodOfCity,
+	StatisticsMerge,
+	LineChartTwoAxis,
+	LineChartThreeAxis,
+	IndustryProductionYear,
+	IndustryProductionCity,
+	IndustryProductionPeriodOfCity,
+	AfforestationYear,
+	AfforestationCity,
+	AfforestationPeriodOfCity,
+	PopulationYear,
+	PopulationCity,
+	PopulationPeriodOfCity,
+	ForestCoverAreaYear,
+	ForestCoverAreaCity,
+	ForestCoverAreaPeriodOfCity,
 } from "../../components/Widgets";
 import {
 	removeIdNode,
+	setColorRange,
+	setColumnCategories,
+	setColumnData,
+	setColumnTitle,
+	setColumnUnit,
 	setIdNewNode,
+	setItemIsSelectCity,
+	setItemIsSelectYear,
+	setLineCategories,
+	setLineData,
+	// setLineThreeAxisCategories,
+	// setLineThreeAxisData,
+	// setLineThreeAxisTitle,
+	// setLineThreeAxisYAxis,
+	setLineTitle,
+	// setLineTwoAxisCategories,
+	// setLineTwoAxisData,
+	// setLineTwoAxisTitle,
+	// setLineTwoAxisYAxis,
+	setLineUnit,
+	setMerge,
+	// setMergeCategories,
+	// setMergeData,
+	// setMergeTitle,
+	// setMergeYAxis,
 	setNavbarNewOnClick,
 	setOutput,
-	setPortCanLinked,
+	setPeriodOfCityFromYear,
+	setPeriodOfCityName,
+	setPeriodOfCityToYear,
+	setTableData,
+	setTableTitle,
+	setTableUnit,
 } from "../../app/slice/dashboardSlice";
 
 const initialSchema = {
@@ -46,15 +109,9 @@ const MashupContent = () => {
 	const classes = useStyles();
 	const dispatch = useDispatch();
 
-	const [schema, { onChange, addNode, removeNode, connect }] = useSchema(
-		initialSchema
-	);
+	const [schema, { onChange, addNode, removeNode }] = useSchema(initialSchema);
 	const isDropItem = useSelector((state) => state.dashboard.toolbar.isDragItem);
 
-	const portCanLinked = useSelector(
-		(state) => state.dashboard.mashupContent.portCanLinked
-	);
-	const port = useSelector((state) => state.dashboard.mashupContent.port);
 	const navbarNewOnClick = useSelector(
 		(state) => state.dashboard.navbar.newOnClick
 	);
@@ -70,25 +127,102 @@ const MashupContent = () => {
 	});
 
 	const getWidget = (id) => {
-		switch (id) {
-			case CLIMATE_HUMIDITY:
-				return Humidity;
-			case VIZ_LINECHART:
-				return LineChart;
-			case VIZ_COLUMNCHART:
-				return ColumnChart;
-			case VIZ_MAPS:
-				return Maps;
-			case INDUSTRY_PRODUCTION:
-				return Industry;
-			case CLIMATE_TEMPERATURE:
-				return Temperature;
-			case OPERATOR_STATISTIC_MERGE:
-				return StatisticsMerge;
-			case VIZ_TABLE:
-				return Table;
-			case CLIMATE_RAINFALL:
-				return Rainfall;
+		const idArray = id.split("-");
+		const dataCube = idArray[0];
+		const dataSet = idArray[1];
+		const filter = idArray[2];
+
+		switch (dataCube) {
+			case CLIMATE:
+				if (dataSet === HUMIDITY) {
+					if (filter === YEAR) {
+						return HumidityYear;
+					} else if (filter === CITY) {
+						return HumidityCity;
+					} else if (filter === PERIOD_OF_CITY) {
+						return HumidityPeriodOfCity;
+					}
+				} else if (dataSet === TEMPERATURE) {
+					if (filter === YEAR) {
+						return TemperatureYear;
+					} else if (filter === CITY) {
+						return TemperatureCity;
+					} else if (filter === PERIOD_OF_CITY) {
+						return TemperaturePeriodOfCity;
+					}
+				} else if (dataSet === RAINFALL) {
+					if (filter === YEAR) {
+						return RainfallYear;
+					} else if (filter === CITY) {
+						return RainfallCity;
+					} else if (filter === PERIOD_OF_CITY) {
+						return RainfallPeriodOfCity;
+					}
+				}
+				break;
+			case INDUSTRY:
+				if (dataSet === INDUSTRY_PRODUCTION) {
+					if (filter === YEAR) {
+						return IndustryProductionYear;
+					} else if (filter === CITY) {
+						return IndustryProductionCity;
+					} else if (filter === PERIOD_OF_CITY) {
+						return IndustryProductionPeriodOfCity;
+					}
+				}
+				break;
+			case FOREST:
+				if (dataSet === AFFORESTATION) {
+					if (filter === YEAR) {
+						return AfforestationYear;
+					} else if (filter === CITY) {
+						return AfforestationCity;
+					} else if (filter === PERIOD_OF_CITY) {
+						return AfforestationPeriodOfCity;
+					}
+				} else if (dataSet === FOREST_COVER_AREA) {
+					if (filter === YEAR) {
+						return ForestCoverAreaYear;
+					} else if (filter === CITY) {
+						return ForestCoverAreaCity;
+					} else if (filter === PERIOD_OF_CITY) {
+						return ForestCoverAreaPeriodOfCity;
+					}
+				}
+				break;
+			case POPULATION:
+				if (dataSet === POPULATION_PRODUCTION) {
+					if (filter === YEAR) {
+						return PopulationYear;
+					} else if (filter === CITY) {
+						return PopulationCity;
+					} else if (filter === PERIOD_OF_CITY) {
+						return PopulationPeriodOfCity;
+					}
+				}
+				break;
+			case OPERATORS:
+				if (dataSet === STATISTICS_MERGE) {
+					return StatisticsMerge;
+				}
+				break;
+			case VISUALIZATION:
+				if (dataSet === CHART) {
+					if (filter === COLUMN) {
+						return ColumnChart;
+					} else if (filter === LINE) {
+						return LineChart;
+					} else if (filter === LINE_TWO_AXIS) {
+						return LineChartTwoAxis;
+					} else if (filter === LINE_THREE_AXIS) {
+						return LineChartThreeAxis;
+					}
+				} else if (dataSet === MAPS) {
+					return Maps;
+				} else if (dataSet === TABLE) {
+					return Table;
+				}
+				break;
 			default:
 				break;
 		}
@@ -106,7 +240,7 @@ const MashupContent = () => {
 			coordinates: [x - 200, y - 70],
 			render: getWidget(isDropItem),
 			data: { onClick: deleteNodeFromSchema },
-			inputs: [{ id: `port-${isDropItem}` }],
+			inputs: [{ id: `portOut-${isDropItem}` }],
 			outputs: [{ id: `port-${isDropItem}` }],
 		};
 		const action = setIdNewNode(id);
@@ -114,19 +248,6 @@ const MashupContent = () => {
 
 		addNode(nextNode);
 	};
-
-	const connectNode = (inputId, outputId) => {
-		connect(inputId, outputId);
-	};
-
-	useEffect(() => {
-		if (portCanLinked === true) {
-			connectNode(port[0], port[1]);
-			let action = setPortCanLinked(false);
-			dispatch(action);
-		}
-		// eslint-disable-next-line
-	}, [portCanLinked]);
 
 	useEffect(() => {
 		if (navbarNewOnClick === true) {
@@ -137,6 +258,66 @@ const MashupContent = () => {
 			action = removeIdNode();
 			dispatch(action);
 			action = setOutput("clear");
+			dispatch(action);
+			action = setMerge([]);
+			dispatch(action);
+			action = setItemIsSelectYear([]);
+			dispatch(action);
+			action = setItemIsSelectCity([]);
+			dispatch(action);
+			action = setPeriodOfCityName("");
+			dispatch(action);
+			action = setPeriodOfCityFromYear("");
+			dispatch(action);
+			action = setPeriodOfCityToYear("");
+			dispatch(action);
+			action = setColorRange([]);
+			dispatch(action);
+			action = setColumnCategories([]);
+			dispatch(action);
+			action = setLineCategories([]);
+			dispatch(action);
+			action = setColumnData([]);
+			dispatch(action);
+			action = setTableData([]);
+			dispatch(action);
+			action = setLineData([]);
+			dispatch(action);
+			action = setColumnTitle("");
+			dispatch(action);
+			action = setLineTitle("");
+			dispatch(action);
+			action = setTableTitle("");
+			dispatch(action);
+			action = setColumnUnit("");
+			dispatch(action);
+			action = setLineUnit("");
+			dispatch(action);
+			action = setTableUnit("");
+			dispatch(action);
+			// action = setMergeCategories([]);
+			// dispatch(action);
+			// action = setMergeData([]);
+			// dispatch(action);
+			// action = setMergeTitle("");
+			// dispatch(action);
+			// action = setMergeYAxis([]);
+			// dispatch(action);
+			// action = setLineTwoAxisTitle("");
+			// dispatch(action);
+			// action = setLineTwoAxisYAxis([]);
+			// dispatch(action);
+			// action = setLineTwoAxisData([]);
+			// dispatch(action);
+			// action = setLineTwoAxisCategories([]);
+			// dispatch(action);
+			// action = setLineThreeAxisTitle("");
+			// dispatch(action);
+			// action = setLineThreeAxisYAxis([]);
+			// dispatch(action);
+			// action = setLineThreeAxisData([]);
+			// dispatch(action);
+			// action = setLineThreeAxisCategories([]);
 			dispatch(action);
 		}
 		// eslint-disable-next-line
